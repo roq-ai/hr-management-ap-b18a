@@ -1,0 +1,2872 @@
+[
+  {
+    "employee": [
+      {
+        "id": "2d569601-2dbe-4921-99f6-0ba51fefa1c7",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 60266,
+        "hire_date": "2023-10-05T04:58:23.005Z",
+        "created_at": "2023-10-05T02:02:35.627Z",
+        "updated_at": "2023-10-04T14:31:10.494Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b14844c7-0588-428e-a4c5-3da68376b37d",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Engineer",
+        "salary": 15658,
+        "hire_date": "2023-10-04T15:07:55.589Z",
+        "created_at": "2023-10-04T16:40:32.030Z",
+        "updated_at": "2023-10-04T07:56:57.368Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ec4956d7-b8cc-45fa-a5df-51af32486981",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Analyst",
+        "salary": 9013,
+        "hire_date": "2023-10-04T20:59:59.309Z",
+        "created_at": "2023-10-04T16:17:07.696Z",
+        "updated_at": "2023-10-04T22:09:12.791Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b6e02f0a-d77a-4439-869a-3c56eb346e21",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Designer",
+        "salary": 61483,
+        "hire_date": "2023-10-04T07:38:23.429Z",
+        "created_at": "2023-10-04T12:36:08.536Z",
+        "updated_at": "2023-10-04T08:55:35.695Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "614f8acf-fac9-438d-8dd0-ce22d9da33e9",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Developer",
+        "salary": 66613,
+        "hire_date": "2023-10-04T07:05:52.010Z",
+        "created_at": "2023-10-04T14:27:51.314Z",
+        "updated_at": "2023-10-04T16:56:54.749Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "ba91e8f9-a813-475d-b970-cfc1a25d4872",
+        "name": "Sales",
+        "budget": 95006,
+        "location": "New York",
+        "created_at": "2023-10-04T05:05:30.603Z",
+        "updated_at": "2023-10-04T07:09:50.850Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      },
+      {
+        "id": "257d2bb7-65d5-47f2-a6cd-3f920ad83940",
+        "name": "Marketing",
+        "budget": 56332,
+        "location": "London",
+        "created_at": "2023-10-05T00:25:00.415Z",
+        "updated_at": "2023-10-04T15:05:36.937Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "2d569601-2dbe-4921-99f6-0ba51fefa1c7"
+      },
+      {
+        "id": "e1ca82c5-03ea-43cc-bbf5-8fafb8c48cdc",
+        "name": "Finance",
+        "budget": 56179,
+        "location": "Tokyo",
+        "created_at": "2023-10-04T09:22:12.839Z",
+        "updated_at": "2023-10-04T22:53:27.280Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "2d569601-2dbe-4921-99f6-0ba51fefa1c7"
+      },
+      {
+        "id": "fe9411b7-aeb9-4d7b-964a-9ec4e97715f6",
+        "name": "Human Resources",
+        "budget": 67216,
+        "location": "Sydney",
+        "created_at": "2023-10-04T07:34:35.297Z",
+        "updated_at": "2023-10-04T09:38:23.333Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "614f8acf-fac9-438d-8dd0-ce22d9da33e9"
+      },
+      {
+        "id": "0b1a648d-0636-4620-89bd-1ae849c31d29",
+        "name": "Operations",
+        "budget": 10096,
+        "location": "Berlin",
+        "created_at": "2023-10-04T15:16:19.796Z",
+        "updated_at": "2023-10-04T14:09:22.609Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "b14844c7-0588-428e-a4c5-3da68376b37d"
+      }
+    ],
+    "project": [
+      {
+        "id": "955058f9-499f-4ac3-b19c-de198a805e6c",
+        "name": "Project A",
+        "start_date": "2023-10-04T11:22:59.510Z",
+        "end_date": "2023-10-04T09:59:51.440Z",
+        "budget": 37121,
+        "created_at": "2023-10-04T12:50:42.118Z",
+        "updated_at": "2023-10-05T01:45:47.810Z",
+        "company_id": "main_entity_pk",
+        "department_id": "e1ca82c5-03ea-43cc-bbf5-8fafb8c48cdc",
+        "manager_id": "b14844c7-0588-428e-a4c5-3da68376b37d"
+      },
+      {
+        "id": "67c76541-5cb9-4067-874a-7e7350cadfb8",
+        "name": "Project B",
+        "start_date": "2023-10-05T01:00:00.373Z",
+        "end_date": "2023-10-04T17:21:13.862Z",
+        "budget": 76544,
+        "created_at": "2023-10-04T22:12:51.834Z",
+        "updated_at": "2023-10-05T00:17:52.452Z",
+        "company_id": "main_entity_pk",
+        "department_id": "ba91e8f9-a813-475d-b970-cfc1a25d4872",
+        "manager_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      },
+      {
+        "id": "bf1cc0de-9f09-4baa-88e3-9ab3a704b7f5",
+        "name": "Project C",
+        "start_date": "2023-10-04T15:34:42.257Z",
+        "end_date": "2023-10-04T09:49:25.824Z",
+        "budget": 4583,
+        "created_at": "2023-10-04T07:24:26.739Z",
+        "updated_at": "2023-10-04T11:35:17.146Z",
+        "company_id": "main_entity_pk",
+        "department_id": "ba91e8f9-a813-475d-b970-cfc1a25d4872",
+        "manager_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      },
+      {
+        "id": "c59691b5-61d6-4924-a17b-e6c3df298dbf",
+        "name": "Project D",
+        "start_date": "2023-10-04T23:40:23.251Z",
+        "end_date": "2023-10-04T17:18:56.286Z",
+        "budget": 26258,
+        "created_at": "2023-10-05T04:41:23.805Z",
+        "updated_at": "2023-10-04T11:02:25.712Z",
+        "company_id": "main_entity_pk",
+        "department_id": "ba91e8f9-a813-475d-b970-cfc1a25d4872",
+        "manager_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      },
+      {
+        "id": "22f4c654-ccf3-4a80-8158-9e331df63b70",
+        "name": "Project E",
+        "start_date": "2023-10-04T16:36:11.062Z",
+        "end_date": "2023-10-04T22:37:27.340Z",
+        "budget": 67050,
+        "created_at": "2023-10-04T16:42:08.049Z",
+        "updated_at": "2023-10-04T12:05:54.386Z",
+        "company_id": "main_entity_pk",
+        "department_id": "0b1a648d-0636-4620-89bd-1ae849c31d29",
+        "manager_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "0f987fa3-5ac0-49e8-bed8-46e0d227a386",
+        "date": "2023-10-05T01:48:31.090Z",
+        "time_in": "2023-10-04T23:24:37.717Z",
+        "time_out": "2023-10-04T08:33:24.490Z",
+        "hours_worked": 36807,
+        "overtime": 66787,
+        "status": "Present",
+        "created_at": "2023-10-04T12:32:22.267Z",
+        "updated_at": "2023-10-04T15:37:46.283Z",
+        "employee_id": "2d569601-2dbe-4921-99f6-0ba51fefa1c7"
+      },
+      {
+        "id": "ab47ca12-dff4-4f6f-b1b6-d926871a3ffa",
+        "date": "2023-10-04T09:02:12.925Z",
+        "time_in": "2023-10-04T07:17:36.992Z",
+        "time_out": "2023-10-04T10:32:27.349Z",
+        "hours_worked": 44401,
+        "overtime": 51477,
+        "status": "Absent",
+        "created_at": "2023-10-05T00:24:49.504Z",
+        "updated_at": "2023-10-05T02:59:20.735Z",
+        "employee_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      },
+      {
+        "id": "632e9aa9-eafc-47d9-a905-73d4ddc9187a",
+        "date": "2023-10-04T10:02:43.392Z",
+        "time_in": "2023-10-04T06:23:43.048Z",
+        "time_out": "2023-10-04T17:20:04.892Z",
+        "hours_worked": 67898,
+        "overtime": 36589,
+        "status": "Late",
+        "created_at": "2023-10-05T03:02:31.914Z",
+        "updated_at": "2023-10-05T00:49:39.451Z",
+        "employee_id": "2d569601-2dbe-4921-99f6-0ba51fefa1c7"
+      },
+      {
+        "id": "da4a89ea-2a20-49f9-899c-6d2385b1380f",
+        "date": "2023-10-04T20:35:21.853Z",
+        "time_in": "2023-10-04T06:28:22.776Z",
+        "time_out": "2023-10-04T13:50:45.004Z",
+        "hours_worked": 18133,
+        "overtime": 62851,
+        "status": "On Leave",
+        "created_at": "2023-10-04T08:07:21.264Z",
+        "updated_at": "2023-10-04T23:48:44.401Z",
+        "employee_id": "ec4956d7-b8cc-45fa-a5df-51af32486981"
+      },
+      {
+        "id": "d5bad907-7347-458f-a784-a490e7ec8002",
+        "date": "2023-10-05T01:26:06.144Z",
+        "time_in": "2023-10-04T05:12:47.367Z",
+        "time_out": "2023-10-04T05:20:36.859Z",
+        "hours_worked": 24585,
+        "overtime": 39655,
+        "status": "Remote",
+        "created_at": "2023-10-04T17:18:18.491Z",
+        "updated_at": "2023-10-05T00:21:51.109Z",
+        "employee_id": "614f8acf-fac9-438d-8dd0-ce22d9da33e9"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "9305a9a6-0418-4a2c-8333-3a74651aea5e",
+        "email": "Tomasa_Mraz84@roq.tech",
+        "firstName": "Harvey",
+        "lastName": "Gutmann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38690314",
+        "tenantId": null
+      },
+      {
+        "reference": "86de4eba-f6fc-4d15-a943-7b781e2639e4",
+        "email": "Franz_Miller@roq.tech",
+        "firstName": "Gina",
+        "lastName": "Bergstrom-Bode",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/55597467",
+        "tenantId": null
+      },
+      {
+        "reference": "9c724079-571c-4574-8187-a62db0a66b2a",
+        "email": "Jackeline_Rice@roq.tech",
+        "firstName": "Larry",
+        "lastName": "Abernathy",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/92483919",
+        "tenantId": null
+      },
+      {
+        "reference": "dd06ab2e-dcc3-40ae-b69d-7039d6476426",
+        "email": "Kamille_Schimmel79@roq.tech",
+        "firstName": "Marley",
+        "lastName": "Feil",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/493.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b4522b9c-273e-44b8-8a08-0b922e2134ab",
+        "email": "Trudie_Rath@roq.tech",
+        "firstName": "Mathias",
+        "lastName": "Botsford",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/755.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "1daf3372-ec47-4028-87d9-b0e087101ac1",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 82024,
+        "hire_date": "2023-10-04T13:26:30.135Z",
+        "created_at": "2023-10-04T05:43:02.970Z",
+        "updated_at": "2023-10-04T23:14:20.824Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0a0be79e-5323-4543-a4ee-b54ba86ed7f1",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Developer",
+        "salary": 59824,
+        "hire_date": "2023-10-05T01:43:39.653Z",
+        "created_at": "2023-10-04T22:05:53.636Z",
+        "updated_at": "2023-10-04T17:41:05.840Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "91a64a77-9566-4d79-a86d-800557220bf1",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Designer",
+        "salary": 3781,
+        "hire_date": "2023-10-04T18:26:22.196Z",
+        "created_at": "2023-10-05T00:57:10.080Z",
+        "updated_at": "2023-10-05T03:13:16.337Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "17153da2-8c9e-4e64-ab18-ada0916b23f0",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Analyst",
+        "salary": 95526,
+        "hire_date": "2023-10-04T13:29:20.317Z",
+        "created_at": "2023-10-04T20:16:26.268Z",
+        "updated_at": "2023-10-05T03:43:03.353Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "55ea15a3-7087-4175-8a2d-b853553baae0",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Engineer",
+        "salary": 41014,
+        "hire_date": "2023-10-05T00:57:10.906Z",
+        "created_at": "2023-10-04T20:10:41.532Z",
+        "updated_at": "2023-10-05T03:59:04.209Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "bd59daae-e414-4246-832a-10417ab4f918",
+        "name": "Sales",
+        "budget": 38314,
+        "location": "New York",
+        "created_at": "2023-10-04T15:56:18.562Z",
+        "updated_at": "2023-10-05T01:57:29.715Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "17153da2-8c9e-4e64-ab18-ada0916b23f0"
+      },
+      {
+        "id": "1bf85bed-1f92-4a93-b5cf-264e6e594479",
+        "name": "Marketing",
+        "budget": 98444,
+        "location": "Los Angeles",
+        "created_at": "2023-10-04T19:09:03.336Z",
+        "updated_at": "2023-10-04T05:29:36.043Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "17153da2-8c9e-4e64-ab18-ada0916b23f0"
+      },
+      {
+        "id": "b9bc7802-a688-43b9-ae64-ed56ba845b7c",
+        "name": "Finance",
+        "budget": 97970,
+        "location": "Chicago",
+        "created_at": "2023-10-04T23:02:47.258Z",
+        "updated_at": "2023-10-04T10:13:27.095Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "17153da2-8c9e-4e64-ab18-ada0916b23f0"
+      },
+      {
+        "id": "65973840-a8a9-4045-82d2-7013ec340679",
+        "name": "Human Resources",
+        "budget": 67495,
+        "location": "Houston",
+        "created_at": "2023-10-04T12:42:42.778Z",
+        "updated_at": "2023-10-04T23:01:38.549Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "0a0be79e-5323-4543-a4ee-b54ba86ed7f1"
+      },
+      {
+        "id": "1aca9872-e96a-4d38-ad78-558638ba835c",
+        "name": "Operations",
+        "budget": 87228,
+        "location": "Philadelphia",
+        "created_at": "2023-10-05T00:07:54.678Z",
+        "updated_at": "2023-10-04T10:47:04.028Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "17153da2-8c9e-4e64-ab18-ada0916b23f0"
+      }
+    ],
+    "project": [
+      {
+        "id": "17660ccc-1a35-49cd-af49-8ea0c49a53e6",
+        "name": "Website Redesign",
+        "start_date": "2023-10-04T16:01:43.389Z",
+        "end_date": "2023-10-04T14:49:47.575Z",
+        "budget": 45570,
+        "created_at": "2023-10-04T16:01:09.300Z",
+        "updated_at": "2023-10-04T18:23:10.484Z",
+        "company_id": "main_entity_pk",
+        "department_id": "1aca9872-e96a-4d38-ad78-558638ba835c",
+        "manager_id": "17153da2-8c9e-4e64-ab18-ada0916b23f0"
+      },
+      {
+        "id": "9c24aec3-8039-4929-b990-231d05efae14",
+        "name": "Mobile App Development",
+        "start_date": "2023-10-05T04:26:11.944Z",
+        "end_date": "2023-10-05T04:12:44.317Z",
+        "budget": 42081,
+        "created_at": "2023-10-04T15:52:32.259Z",
+        "updated_at": "2023-10-04T12:23:01.581Z",
+        "company_id": "main_entity_pk",
+        "department_id": "bd59daae-e414-4246-832a-10417ab4f918",
+        "manager_id": "1daf3372-ec47-4028-87d9-b0e087101ac1"
+      },
+      {
+        "id": "62891993-e9f1-40e9-beef-432717bbf0d2",
+        "name": "Marketing Campaign",
+        "start_date": "2023-10-04T17:55:03.233Z",
+        "end_date": "2023-10-05T00:12:13.399Z",
+        "budget": 81614,
+        "created_at": "2023-10-04T14:11:48.018Z",
+        "updated_at": "2023-10-04T22:48:03.553Z",
+        "company_id": "main_entity_pk",
+        "department_id": "1aca9872-e96a-4d38-ad78-558638ba835c",
+        "manager_id": "1daf3372-ec47-4028-87d9-b0e087101ac1"
+      },
+      {
+        "id": "56ec94dd-fb6c-4c2c-b425-51112e17e34f",
+        "name": "Product Launch",
+        "start_date": "2023-10-05T04:12:57.395Z",
+        "end_date": "2023-10-04T14:59:30.686Z",
+        "budget": 39811,
+        "created_at": "2023-10-04T14:50:12.827Z",
+        "updated_at": "2023-10-04T07:42:20.275Z",
+        "company_id": "main_entity_pk",
+        "department_id": "b9bc7802-a688-43b9-ae64-ed56ba845b7c",
+        "manager_id": "91a64a77-9566-4d79-a86d-800557220bf1"
+      },
+      {
+        "id": "ed2dc54d-834a-451c-a569-d69d839314be",
+        "name": "Data Analysis",
+        "start_date": "2023-10-04T06:12:02.280Z",
+        "end_date": "2023-10-04T10:08:58.851Z",
+        "budget": 82741,
+        "created_at": "2023-10-04T22:15:53.240Z",
+        "updated_at": "2023-10-04T06:51:11.510Z",
+        "company_id": "main_entity_pk",
+        "department_id": "1aca9872-e96a-4d38-ad78-558638ba835c",
+        "manager_id": "91a64a77-9566-4d79-a86d-800557220bf1"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "39ea145c-08e6-4652-8de4-71dd58df333d",
+        "date": "2023-10-04T17:32:29.423Z",
+        "time_in": "2023-10-04T12:35:42.602Z",
+        "time_out": "2023-10-04T21:40:51.415Z",
+        "hours_worked": 97253,
+        "overtime": 59580,
+        "status": "Present",
+        "created_at": "2023-10-04T11:04:20.432Z",
+        "updated_at": "2023-10-04T12:34:01.806Z",
+        "employee_id": "55ea15a3-7087-4175-8a2d-b853553baae0"
+      },
+      {
+        "id": "fb1c7847-4bac-4451-84a9-7ed213471166",
+        "date": "2023-10-04T22:15:56.862Z",
+        "time_in": "2023-10-04T18:16:23.196Z",
+        "time_out": "2023-10-04T07:33:27.453Z",
+        "hours_worked": 86631,
+        "overtime": 73988,
+        "status": "Absent",
+        "created_at": "2023-10-05T04:25:01.316Z",
+        "updated_at": "2023-10-04T21:39:06.832Z",
+        "employee_id": "55ea15a3-7087-4175-8a2d-b853553baae0"
+      },
+      {
+        "id": "2906698e-3487-4599-9145-47cb02527abf",
+        "date": "2023-10-05T02:20:00.666Z",
+        "time_in": "2023-10-04T23:40:44.362Z",
+        "time_out": "2023-10-04T14:55:27.066Z",
+        "hours_worked": 67123,
+        "overtime": 62023,
+        "status": "Late",
+        "created_at": "2023-10-04T11:46:24.430Z",
+        "updated_at": "2023-10-05T00:32:35.698Z",
+        "employee_id": "91a64a77-9566-4d79-a86d-800557220bf1"
+      },
+      {
+        "id": "c6a36f31-59f8-41ae-b794-959daa9fed75",
+        "date": "2023-10-04T09:51:31.984Z",
+        "time_in": "2023-10-04T05:03:06.663Z",
+        "time_out": "2023-10-04T06:26:24.058Z",
+        "hours_worked": 37849,
+        "overtime": 74595,
+        "status": "On Leave",
+        "created_at": "2023-10-04T10:54:34.826Z",
+        "updated_at": "2023-10-04T22:45:01.443Z",
+        "employee_id": "17153da2-8c9e-4e64-ab18-ada0916b23f0"
+      },
+      {
+        "id": "89c0edd9-e438-404c-b266-e34471bd6feb",
+        "date": "2023-10-04T19:11:34.567Z",
+        "time_in": "2023-10-04T21:50:29.618Z",
+        "time_out": "2023-10-05T00:19:44.932Z",
+        "hours_worked": 92147,
+        "overtime": 2532,
+        "status": "Remote",
+        "created_at": "2023-10-04T21:49:35.887Z",
+        "updated_at": "2023-10-04T21:19:13.058Z",
+        "employee_id": "91a64a77-9566-4d79-a86d-800557220bf1"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "c89a89a0-85a1-4a4f-8c2c-0e12bfdcd463",
+        "email": "Sheldon_Carroll@roq.tech",
+        "firstName": "Tyreek",
+        "lastName": "Hand",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/64826146",
+        "tenantId": null
+      },
+      {
+        "reference": "8c4fd44a-7edb-474d-aee0-b59ef2291a5c",
+        "email": "Garrett.Deckow@roq.tech",
+        "firstName": "Delta",
+        "lastName": "Jast",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1178.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "610bf891-ec51-4af4-a95b-35370322a762",
+        "email": "Elena.Bergnaum65@roq.tech",
+        "firstName": "Cullen",
+        "lastName": "Bashirian",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1112.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3d8033cb-8cd9-4ef8-a99e-3b299437be28",
+        "email": "Enoch_Bartell@roq.tech",
+        "firstName": "Shawn",
+        "lastName": "Senger",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/461.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "319d3378-c9b8-433e-993b-9d6473afdb82",
+        "email": "Delta.Batz62@roq.tech",
+        "firstName": "Creola",
+        "lastName": "Corwin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/13.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "766455cf-1e56-49f5-b175-7c6e7a315114",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 72154,
+        "hire_date": "2023-10-04T23:05:43.690Z",
+        "created_at": "2023-10-05T00:52:14.519Z",
+        "updated_at": "2023-10-05T02:07:57.601Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b1a642e4-d58f-4192-8f78-b7692c31aa0c",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Engineer",
+        "salary": 40199,
+        "hire_date": "2023-10-04T20:18:19.460Z",
+        "created_at": "2023-10-04T14:24:33.187Z",
+        "updated_at": "2023-10-05T01:58:37.824Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2c7fe1ab-58ed-44ee-9f66-c0ee6445362a",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Analyst",
+        "salary": 56976,
+        "hire_date": "2023-10-04T18:10:14.628Z",
+        "created_at": "2023-10-05T02:56:11.238Z",
+        "updated_at": "2023-10-05T03:27:27.644Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5ca2650d-dab7-4185-8e13-94f7dfe58b2d",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Supervisor",
+        "salary": 48753,
+        "hire_date": "2023-10-04T21:43:10.421Z",
+        "created_at": "2023-10-04T15:31:12.882Z",
+        "updated_at": "2023-10-04T19:03:02.159Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "27e5c39b-9923-48f0-9c05-5171760467e6",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Coordinator",
+        "salary": 62263,
+        "hire_date": "2023-10-04T22:23:14.167Z",
+        "created_at": "2023-10-04T15:44:45.183Z",
+        "updated_at": "2023-10-04T19:35:03.943Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "31cf7f89-45ab-478a-94d0-f1d1ab4fcac7",
+        "name": "Sales",
+        "budget": 31816,
+        "location": "New York",
+        "created_at": "2023-10-05T03:58:55.368Z",
+        "updated_at": "2023-10-04T19:59:05.866Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "2c7fe1ab-58ed-44ee-9f66-c0ee6445362a"
+      },
+      {
+        "id": "5e5727c8-558b-4708-beaa-6c68d360625b",
+        "name": "Marketing",
+        "budget": 59035,
+        "location": "Los Angeles",
+        "created_at": "2023-10-04T08:43:30.422Z",
+        "updated_at": "2023-10-04T09:12:35.398Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "27e5c39b-9923-48f0-9c05-5171760467e6"
+      },
+      {
+        "id": "505f6c0b-54d6-404a-8fcd-052856eaa928",
+        "name": "Finance",
+        "budget": 86237,
+        "location": "Chicago",
+        "created_at": "2023-10-05T04:16:16.223Z",
+        "updated_at": "2023-10-04T10:09:32.215Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "b1a642e4-d58f-4192-8f78-b7692c31aa0c"
+      },
+      {
+        "id": "c8cd14ab-bb8a-49b7-bb33-7ed1a59affcb",
+        "name": "Human Resources",
+        "budget": 69501,
+        "location": "Houston",
+        "created_at": "2023-10-05T00:52:53.483Z",
+        "updated_at": "2023-10-05T03:50:55.482Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "27e5c39b-9923-48f0-9c05-5171760467e6"
+      },
+      {
+        "id": "57bf874c-9c4e-40d7-b98e-7d8db8998cce",
+        "name": "Operations",
+        "budget": 74968,
+        "location": "Phoenix",
+        "created_at": "2023-10-05T02:09:40.273Z",
+        "updated_at": "2023-10-04T14:45:19.802Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "27e5c39b-9923-48f0-9c05-5171760467e6"
+      }
+    ],
+    "project": [
+      {
+        "id": "76c0edb2-bc12-4334-a265-b25b32162149",
+        "name": "Project A",
+        "start_date": "2023-10-04T06:52:15.198Z",
+        "end_date": "2023-10-04T05:43:12.477Z",
+        "budget": 66131,
+        "created_at": "2023-10-04T05:42:08.204Z",
+        "updated_at": "2023-10-04T22:06:43.171Z",
+        "company_id": "main_entity_pk",
+        "department_id": "57bf874c-9c4e-40d7-b98e-7d8db8998cce",
+        "manager_id": "27e5c39b-9923-48f0-9c05-5171760467e6"
+      },
+      {
+        "id": "1ed5b87b-8a86-48ef-8adc-be0f4b9d1c45",
+        "name": "Project B",
+        "start_date": "2023-10-05T02:26:47.430Z",
+        "end_date": "2023-10-05T04:23:19.771Z",
+        "budget": 19531,
+        "created_at": "2023-10-04T06:54:30.935Z",
+        "updated_at": "2023-10-04T22:52:22.915Z",
+        "company_id": "main_entity_pk",
+        "department_id": "c8cd14ab-bb8a-49b7-bb33-7ed1a59affcb",
+        "manager_id": "5ca2650d-dab7-4185-8e13-94f7dfe58b2d"
+      },
+      {
+        "id": "49131c47-3d0e-4963-ad9c-ecf043579806",
+        "name": "Project C",
+        "start_date": "2023-10-04T05:27:42.607Z",
+        "end_date": "2023-10-04T21:16:13.518Z",
+        "budget": 88240,
+        "created_at": "2023-10-05T04:09:00.397Z",
+        "updated_at": "2023-10-04T18:04:17.830Z",
+        "company_id": "main_entity_pk",
+        "department_id": "31cf7f89-45ab-478a-94d0-f1d1ab4fcac7",
+        "manager_id": "b1a642e4-d58f-4192-8f78-b7692c31aa0c"
+      },
+      {
+        "id": "7d1eeb4d-41b5-4e84-a613-bc43dca4a248",
+        "name": "Project D",
+        "start_date": "2023-10-04T16:38:04.947Z",
+        "end_date": "2023-10-04T10:37:43.171Z",
+        "budget": 72806,
+        "created_at": "2023-10-04T05:44:17.193Z",
+        "updated_at": "2023-10-04T05:38:09.111Z",
+        "company_id": "main_entity_pk",
+        "department_id": "5e5727c8-558b-4708-beaa-6c68d360625b",
+        "manager_id": "27e5c39b-9923-48f0-9c05-5171760467e6"
+      },
+      {
+        "id": "bb774700-ca52-4111-b77c-f71cd40f97cd",
+        "name": "Project E",
+        "start_date": "2023-10-04T19:18:59.068Z",
+        "end_date": "2023-10-04T13:40:34.606Z",
+        "budget": 95740,
+        "created_at": "2023-10-04T23:12:38.800Z",
+        "updated_at": "2023-10-04T21:44:25.364Z",
+        "company_id": "main_entity_pk",
+        "department_id": "505f6c0b-54d6-404a-8fcd-052856eaa928",
+        "manager_id": "766455cf-1e56-49f5-b175-7c6e7a315114"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "0cf9315c-cbc0-4d50-b052-ec7eeca3d786",
+        "date": "2023-10-04T05:20:02.519Z",
+        "time_in": "2023-10-05T04:15:57.866Z",
+        "time_out": "2023-10-05T00:22:05.580Z",
+        "hours_worked": 20188,
+        "overtime": 46703,
+        "status": "Present",
+        "created_at": "2023-10-05T04:11:09.592Z",
+        "updated_at": "2023-10-04T08:47:16.340Z",
+        "employee_id": "b1a642e4-d58f-4192-8f78-b7692c31aa0c"
+      },
+      {
+        "id": "bc3978ec-5956-4420-b9cf-d7521c237ac3",
+        "date": "2023-10-04T21:26:18.300Z",
+        "time_in": "2023-10-04T11:46:19.828Z",
+        "time_out": "2023-10-04T17:41:53.776Z",
+        "hours_worked": 58131,
+        "overtime": 87359,
+        "status": "Absent",
+        "created_at": "2023-10-04T20:18:33.091Z",
+        "updated_at": "2023-10-05T05:02:34.204Z",
+        "employee_id": "2c7fe1ab-58ed-44ee-9f66-c0ee6445362a"
+      },
+      {
+        "id": "9f736a40-86bc-4399-b379-b44818feaddd",
+        "date": "2023-10-04T21:58:03.488Z",
+        "time_in": "2023-10-04T21:07:35.171Z",
+        "time_out": "2023-10-05T01:24:44.119Z",
+        "hours_worked": 52500,
+        "overtime": 6910,
+        "status": "Late",
+        "created_at": "2023-10-04T07:58:45.636Z",
+        "updated_at": "2023-10-04T09:54:04.888Z",
+        "employee_id": "766455cf-1e56-49f5-b175-7c6e7a315114"
+      },
+      {
+        "id": "8290a042-7fbb-466f-8965-39c3a6468549",
+        "date": "2023-10-04T23:41:42.183Z",
+        "time_in": "2023-10-05T00:14:14.069Z",
+        "time_out": "2023-10-04T14:35:58.291Z",
+        "hours_worked": 53674,
+        "overtime": 2201,
+        "status": "On Leave",
+        "created_at": "2023-10-04T16:39:06.712Z",
+        "updated_at": "2023-10-04T09:14:39.454Z",
+        "employee_id": "2c7fe1ab-58ed-44ee-9f66-c0ee6445362a"
+      },
+      {
+        "id": "e3e75312-43d0-47ad-8fea-28eb2712f91e",
+        "date": "2023-10-05T04:42:00.854Z",
+        "time_in": "2023-10-04T19:27:14.630Z",
+        "time_out": "2023-10-05T01:22:34.557Z",
+        "hours_worked": 27572,
+        "overtime": 22387,
+        "status": "Sick",
+        "created_at": "2023-10-05T00:12:31.042Z",
+        "updated_at": "2023-10-04T10:33:30.388Z",
+        "employee_id": "766455cf-1e56-49f5-b175-7c6e7a315114"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "2af31638-7557-4cb2-a153-2d4a885b4db0",
+        "email": "Everardo.Anderson@roq.tech",
+        "firstName": "Emmalee",
+        "lastName": "Armstrong",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1064.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8e9e04c8-e2cd-4b6c-914f-9fef83189180",
+        "email": "Eugene48@roq.tech",
+        "firstName": "Kitty",
+        "lastName": "Balistreri",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/42095059",
+        "tenantId": null
+      },
+      {
+        "reference": "4b73fec7-3082-4940-b594-9983222255ee",
+        "email": "Obie44@roq.tech",
+        "firstName": "Jerrell",
+        "lastName": "Mills",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/858.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "abc44285-ae27-40ff-89ea-3d344dda642f",
+        "email": "Shaina43@roq.tech",
+        "firstName": "Reynold",
+        "lastName": "Jacobi",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82387758",
+        "tenantId": null
+      },
+      {
+        "reference": "02881367-e813-4209-913c-5854f8a7a4b0",
+        "email": "Shaylee_Bauch-McDermott@roq.tech",
+        "firstName": "Nellie",
+        "lastName": "Macejkovic",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/23256288",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 37815,
+        "hire_date": "2023-10-04T12:38:51.186Z",
+        "created_at": "2023-10-04T06:40:59.015Z",
+        "updated_at": "2023-10-04T10:18:27.642Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ef2c61d2-f187-4c1b-bc58-90e9a1763e19",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Developer",
+        "salary": 88777,
+        "hire_date": "2023-10-05T02:25:17.714Z",
+        "created_at": "2023-10-04T05:45:57.218Z",
+        "updated_at": "2023-10-04T10:51:55.532Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8337eb45-9b8f-4f28-9a13-33937d6eb66a",
+        "first_name": "Michael",
+        "last_name": "Johnson",
+        "position": "Designer",
+        "salary": 80471,
+        "hire_date": "2023-10-05T00:49:19.106Z",
+        "created_at": "2023-10-04T20:25:18.208Z",
+        "updated_at": "2023-10-04T21:11:02.719Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "01688f42-eea0-4d0d-a652-4c437ef05a97",
+        "first_name": "Sarah",
+        "last_name": "Wilson",
+        "position": "Analyst",
+        "salary": 7618,
+        "hire_date": "2023-10-04T20:17:25.063Z",
+        "created_at": "2023-10-05T03:45:03.876Z",
+        "updated_at": "2023-10-04T19:45:28.009Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "41c144a5-687c-466e-a25b-d281adaf7dac",
+        "first_name": "David",
+        "last_name": "Brown",
+        "position": "Salesperson",
+        "salary": 39593,
+        "hire_date": "2023-10-04T12:26:13.023Z",
+        "created_at": "2023-10-05T01:55:55.128Z",
+        "updated_at": "2023-10-05T04:06:20.384Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "eb482203-6487-4829-abc2-2fc9b5412956",
+        "name": "Engineering",
+        "budget": 74934,
+        "location": "New York",
+        "created_at": "2023-10-04T18:05:24.415Z",
+        "updated_at": "2023-10-04T14:49:04.890Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "8337eb45-9b8f-4f28-9a13-33937d6eb66a"
+      },
+      {
+        "id": "ff9a3fb1-b24c-43f1-8581-b826dc2d7f4b",
+        "name": "Marketing",
+        "budget": 56294,
+        "location": "Los Angeles",
+        "created_at": "2023-10-05T04:42:01.454Z",
+        "updated_at": "2023-10-04T05:53:30.459Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835"
+      },
+      {
+        "id": "daf4174e-8c9e-4c4b-ae27-3b0c40a7a241",
+        "name": "Finance",
+        "budget": 94181,
+        "location": "Chicago",
+        "created_at": "2023-10-04T19:27:56.813Z",
+        "updated_at": "2023-10-04T10:27:57.589Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "41c144a5-687c-466e-a25b-d281adaf7dac"
+      },
+      {
+        "id": "eb338b31-c75c-43f6-bf59-043f9491a003",
+        "name": "Human Resources",
+        "budget": 28489,
+        "location": "Houston",
+        "created_at": "2023-10-04T16:09:10.746Z",
+        "updated_at": "2023-10-04T16:58:49.833Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835"
+      },
+      {
+        "id": "505fba15-da37-491f-ab1e-01b0fcbd7a72",
+        "name": "Operations",
+        "budget": 36535,
+        "location": "Miami",
+        "created_at": "2023-10-04T14:53:16.506Z",
+        "updated_at": "2023-10-04T06:37:49.030Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "41c144a5-687c-466e-a25b-d281adaf7dac"
+      }
+    ],
+    "project": [
+      {
+        "id": "7365f82b-dc81-4752-94be-f8a15734c6d2",
+        "name": "Project A",
+        "start_date": "2023-10-05T02:03:22.863Z",
+        "end_date": "2023-10-05T04:29:43.098Z",
+        "budget": 38638,
+        "created_at": "2023-10-04T07:34:12.687Z",
+        "updated_at": "2023-10-04T14:26:11.611Z",
+        "company_id": "main_entity_pk",
+        "department_id": "daf4174e-8c9e-4c4b-ae27-3b0c40a7a241",
+        "manager_id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835"
+      },
+      {
+        "id": "70e8798d-3349-49b4-8bdb-df71bf066e6e",
+        "name": "Project B",
+        "start_date": "2023-10-04T16:58:02.795Z",
+        "end_date": "2023-10-04T22:20:43.229Z",
+        "budget": 8997,
+        "created_at": "2023-10-04T14:58:52.950Z",
+        "updated_at": "2023-10-04T17:44:26.177Z",
+        "company_id": "main_entity_pk",
+        "department_id": "daf4174e-8c9e-4c4b-ae27-3b0c40a7a241",
+        "manager_id": "41c144a5-687c-466e-a25b-d281adaf7dac"
+      },
+      {
+        "id": "8c8798cb-e641-403c-a698-d0bf2fdcb196",
+        "name": "Project C",
+        "start_date": "2023-10-04T22:56:05.896Z",
+        "end_date": "2023-10-05T01:11:48.054Z",
+        "budget": 3187,
+        "created_at": "2023-10-04T09:28:58.698Z",
+        "updated_at": "2023-10-04T21:27:01.364Z",
+        "company_id": "main_entity_pk",
+        "department_id": "505fba15-da37-491f-ab1e-01b0fcbd7a72",
+        "manager_id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835"
+      },
+      {
+        "id": "5324f406-4e0d-4c7b-94b6-c90281eedc2c",
+        "name": "Project D",
+        "start_date": "2023-10-05T00:19:45.437Z",
+        "end_date": "2023-10-04T12:50:53.711Z",
+        "budget": 33749,
+        "created_at": "2023-10-04T13:29:38.104Z",
+        "updated_at": "2023-10-05T01:09:05.209Z",
+        "company_id": "main_entity_pk",
+        "department_id": "505fba15-da37-491f-ab1e-01b0fcbd7a72",
+        "manager_id": "8337eb45-9b8f-4f28-9a13-33937d6eb66a"
+      },
+      {
+        "id": "1a541f1f-ed5e-452f-8b14-9c49cb88c9f0",
+        "name": "Project E",
+        "start_date": "2023-10-04T07:23:39.090Z",
+        "end_date": "2023-10-04T23:42:35.216Z",
+        "budget": 55944,
+        "created_at": "2023-10-04T10:35:22.402Z",
+        "updated_at": "2023-10-04T22:49:42.377Z",
+        "company_id": "main_entity_pk",
+        "department_id": "505fba15-da37-491f-ab1e-01b0fcbd7a72",
+        "manager_id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "577483d3-953f-4929-aca1-24af1156093b",
+        "date": "2023-10-04T05:57:08.957Z",
+        "time_in": "2023-10-04T09:15:01.794Z",
+        "time_out": "2023-10-04T22:04:47.628Z",
+        "hours_worked": 32269,
+        "overtime": 93148,
+        "status": "Present",
+        "created_at": "2023-10-04T22:54:25.655Z",
+        "updated_at": "2023-10-05T00:32:30.991Z",
+        "employee_id": "ef2c61d2-f187-4c1b-bc58-90e9a1763e19"
+      },
+      {
+        "id": "b65aa378-651e-47f4-8fb6-5588074e64ce",
+        "date": "2023-10-05T00:11:42.797Z",
+        "time_in": "2023-10-04T15:47:14.002Z",
+        "time_out": "2023-10-05T03:48:11.964Z",
+        "hours_worked": 50972,
+        "overtime": 36558,
+        "status": "Absent",
+        "created_at": "2023-10-04T11:39:11.379Z",
+        "updated_at": "2023-10-04T20:44:25.668Z",
+        "employee_id": "01688f42-eea0-4d0d-a652-4c437ef05a97"
+      },
+      {
+        "id": "e8cbd2a7-2961-4907-b762-fd0b0a0aa08d",
+        "date": "2023-10-05T01:59:50.967Z",
+        "time_in": "2023-10-05T02:53:14.610Z",
+        "time_out": "2023-10-04T23:36:32.199Z",
+        "hours_worked": 68734,
+        "overtime": 51,
+        "status": "Late",
+        "created_at": "2023-10-04T16:41:46.136Z",
+        "updated_at": "2023-10-04T16:54:55.748Z",
+        "employee_id": "989e90de-fb57-4fe6-9f5b-d9f7df31f835"
+      },
+      {
+        "id": "42ace8a3-2fb2-41dd-93cb-89e1af8b2faf",
+        "date": "2023-10-04T05:17:56.651Z",
+        "time_in": "2023-10-04T06:28:21.615Z",
+        "time_out": "2023-10-04T20:01:25.629Z",
+        "hours_worked": 1875,
+        "overtime": 49507,
+        "status": "On Leave",
+        "created_at": "2023-10-04T18:16:18.550Z",
+        "updated_at": "2023-10-05T02:47:52.376Z",
+        "employee_id": "8337eb45-9b8f-4f28-9a13-33937d6eb66a"
+      },
+      {
+        "id": "5ce758e8-c202-47dc-a43e-5402cb219dff",
+        "date": "2023-10-04T12:25:37.989Z",
+        "time_in": "2023-10-04T16:43:45.747Z",
+        "time_out": "2023-10-04T11:09:59.351Z",
+        "hours_worked": 45162,
+        "overtime": 63412,
+        "status": "Remote",
+        "created_at": "2023-10-04T18:24:23.711Z",
+        "updated_at": "2023-10-04T06:40:47.910Z",
+        "employee_id": "8337eb45-9b8f-4f28-9a13-33937d6eb66a"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "8c57d469-083a-4a6d-882a-bf4105a947c1",
+        "email": "Aliyah.Wyman@roq.tech",
+        "firstName": "Mariana",
+        "lastName": "Rutherford",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/305.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0cbef2e0-f1f1-480f-9e6c-db7f4ad8f4fb",
+        "email": "Billy.Haley45@roq.tech",
+        "firstName": "Santa",
+        "lastName": "Armstrong",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/857.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c652b41f-3a30-4321-a102-0a5ae40b471d",
+        "email": "Rachel.Hickle@roq.tech",
+        "firstName": "Vickie",
+        "lastName": "Moen-Rogahn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4659970",
+        "tenantId": null
+      },
+      {
+        "reference": "81ce97b2-eedf-43c4-bc09-8fcca9e9084c",
+        "email": "Julien.Schuppe85@roq.tech",
+        "firstName": "Jaylon",
+        "lastName": "Cummerata",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/931.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "dd6683f5-5894-46fc-8b80-f52816e61b6d",
+        "email": "Jude_Hand-Lesch@roq.tech",
+        "firstName": "Abbie",
+        "lastName": "Lebsack",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/569.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "ed61e52e-18e3-4c5f-95c9-9be95103609f",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 51853,
+        "hire_date": "2023-10-04T21:44:29.953Z",
+        "created_at": "2023-10-05T01:04:18.901Z",
+        "updated_at": "2023-10-04T05:22:15.868Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "53d82c49-f023-423d-9358-1d21cd4af3b6",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Engineer",
+        "salary": 90969,
+        "hire_date": "2023-10-04T05:05:30.260Z",
+        "created_at": "2023-10-04T16:23:17.862Z",
+        "updated_at": "2023-10-04T14:30:11.701Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5806b41a-dee2-4e2f-988f-e50018d3d69d",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Analyst",
+        "salary": 14968,
+        "hire_date": "2023-10-04T10:18:06.073Z",
+        "created_at": "2023-10-04T09:00:50.598Z",
+        "updated_at": "2023-10-04T15:50:19.231Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fe16a609-c8d7-4362-ae26-b56eca8fa59b",
+        "first_name": "Sarah",
+        "last_name": "Johnson",
+        "position": "Supervisor",
+        "salary": 99813,
+        "hire_date": "2023-10-05T03:50:25.712Z",
+        "created_at": "2023-10-04T23:54:22.601Z",
+        "updated_at": "2023-10-05T00:24:19.952Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "dda04753-3c37-4e41-b6ab-ebab10ce616e",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "position": "Coordinator",
+        "salary": 50025,
+        "hire_date": "2023-10-04T17:25:33.668Z",
+        "created_at": "2023-10-04T12:16:44.040Z",
+        "updated_at": "2023-10-04T14:02:04.184Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "00821e1d-7217-47fb-ad78-274e86669993",
+        "name": "Sales",
+        "budget": 77729,
+        "location": "New York",
+        "created_at": "2023-10-05T05:02:41.436Z",
+        "updated_at": "2023-10-04T14:01:50.700Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "ed61e52e-18e3-4c5f-95c9-9be95103609f"
+      },
+      {
+        "id": "9d9288be-7f1f-46bc-9899-0ebd3c2718c8",
+        "name": "Marketing",
+        "budget": 44170,
+        "location": "Los Angeles",
+        "created_at": "2023-10-05T04:47:23.161Z",
+        "updated_at": "2023-10-05T01:23:00.707Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "dda04753-3c37-4e41-b6ab-ebab10ce616e"
+      },
+      {
+        "id": "22e10679-f943-47cf-83e2-37611a36b6f7",
+        "name": "Finance",
+        "budget": 92190,
+        "location": "Chicago",
+        "created_at": "2023-10-04T06:20:21.324Z",
+        "updated_at": "2023-10-04T20:49:12.571Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "ed61e52e-18e3-4c5f-95c9-9be95103609f"
+      },
+      {
+        "id": "a874e31f-e337-4f40-8103-11a7169974c8",
+        "name": "Human Resources",
+        "budget": 28584,
+        "location": "Houston",
+        "created_at": "2023-10-04T16:23:02.579Z",
+        "updated_at": "2023-10-04T19:55:38.366Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "fe16a609-c8d7-4362-ae26-b56eca8fa59b"
+      },
+      {
+        "id": "9eb9de1a-2513-4a34-859e-53899f9b6476",
+        "name": "Operations",
+        "budget": 78748,
+        "location": "Miami",
+        "created_at": "2023-10-04T19:18:25.700Z",
+        "updated_at": "2023-10-04T11:22:43.834Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "ed61e52e-18e3-4c5f-95c9-9be95103609f"
+      }
+    ],
+    "project": [
+      {
+        "id": "dd7c3f92-4f17-4e26-b039-02fe3ed956b8",
+        "name": "Project A",
+        "start_date": "2023-10-04T14:36:52.357Z",
+        "end_date": "2023-10-04T22:23:19.068Z",
+        "budget": 96657,
+        "created_at": "2023-10-05T00:39:03.171Z",
+        "updated_at": "2023-10-05T00:42:22.294Z",
+        "company_id": "main_entity_pk",
+        "department_id": "22e10679-f943-47cf-83e2-37611a36b6f7",
+        "manager_id": "5806b41a-dee2-4e2f-988f-e50018d3d69d"
+      },
+      {
+        "id": "5dbd0146-6635-4120-8304-17c1354f5cd3",
+        "name": "Project B",
+        "start_date": "2023-10-05T03:48:00.584Z",
+        "end_date": "2023-10-04T20:45:31.598Z",
+        "budget": 39639,
+        "created_at": "2023-10-04T18:46:17.778Z",
+        "updated_at": "2023-10-04T15:54:03.212Z",
+        "company_id": "main_entity_pk",
+        "department_id": "00821e1d-7217-47fb-ad78-274e86669993",
+        "manager_id": "53d82c49-f023-423d-9358-1d21cd4af3b6"
+      },
+      {
+        "id": "f83f1b96-4a0b-40fe-b480-641f8d4e4598",
+        "name": "Project C",
+        "start_date": "2023-10-04T23:27:12.302Z",
+        "end_date": "2023-10-05T03:56:41.527Z",
+        "budget": 10820,
+        "created_at": "2023-10-04T08:57:47.239Z",
+        "updated_at": "2023-10-04T11:46:49.652Z",
+        "company_id": "main_entity_pk",
+        "department_id": "00821e1d-7217-47fb-ad78-274e86669993",
+        "manager_id": "5806b41a-dee2-4e2f-988f-e50018d3d69d"
+      },
+      {
+        "id": "295783a3-1edf-48f4-a01d-d440e48936fc",
+        "name": "Project D",
+        "start_date": "2023-10-04T14:01:30.834Z",
+        "end_date": "2023-10-04T09:12:03.694Z",
+        "budget": 20242,
+        "created_at": "2023-10-04T16:03:02.300Z",
+        "updated_at": "2023-10-04T23:33:28.691Z",
+        "company_id": "main_entity_pk",
+        "department_id": "00821e1d-7217-47fb-ad78-274e86669993",
+        "manager_id": "ed61e52e-18e3-4c5f-95c9-9be95103609f"
+      },
+      {
+        "id": "a475860a-ad37-4842-92e4-0da9cbe5447d",
+        "name": "Project E",
+        "start_date": "2023-10-04T18:29:04.316Z",
+        "end_date": "2023-10-04T08:28:13.499Z",
+        "budget": 5969,
+        "created_at": "2023-10-05T04:43:39.275Z",
+        "updated_at": "2023-10-04T10:56:35.542Z",
+        "company_id": "main_entity_pk",
+        "department_id": "9d9288be-7f1f-46bc-9899-0ebd3c2718c8",
+        "manager_id": "53d82c49-f023-423d-9358-1d21cd4af3b6"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "04761104-72f0-4003-b2c2-0fc8d9a05600",
+        "date": "2023-10-05T01:10:03.003Z",
+        "time_in": "2023-10-04T23:28:48.565Z",
+        "time_out": "2023-10-04T12:31:42.327Z",
+        "hours_worked": 22320,
+        "overtime": 2307,
+        "status": "Present",
+        "created_at": "2023-10-04T06:45:06.797Z",
+        "updated_at": "2023-10-04T10:00:21.627Z",
+        "employee_id": "53d82c49-f023-423d-9358-1d21cd4af3b6"
+      },
+      {
+        "id": "8d0f9553-c3ba-4dc4-b5fb-a40846135488",
+        "date": "2023-10-04T18:25:31.749Z",
+        "time_in": "2023-10-04T07:48:36.336Z",
+        "time_out": "2023-10-04T07:23:41.790Z",
+        "hours_worked": 35230,
+        "overtime": 2433,
+        "status": "Absent",
+        "created_at": "2023-10-05T02:14:11.628Z",
+        "updated_at": "2023-10-04T10:33:23.080Z",
+        "employee_id": "5806b41a-dee2-4e2f-988f-e50018d3d69d"
+      },
+      {
+        "id": "d9002dce-9e5f-419d-8ef6-b2c379f05f7f",
+        "date": "2023-10-04T21:26:20.706Z",
+        "time_in": "2023-10-04T21:28:35.966Z",
+        "time_out": "2023-10-04T19:24:08.883Z",
+        "hours_worked": 71653,
+        "overtime": 34653,
+        "status": "Late",
+        "created_at": "2023-10-04T05:46:43.621Z",
+        "updated_at": "2023-10-05T03:32:46.650Z",
+        "employee_id": "fe16a609-c8d7-4362-ae26-b56eca8fa59b"
+      },
+      {
+        "id": "821f9075-4913-449b-bdca-44a44308f0e6",
+        "date": "2023-10-04T19:54:23.089Z",
+        "time_in": "2023-10-04T09:55:51.104Z",
+        "time_out": "2023-10-04T14:05:18.797Z",
+        "hours_worked": 21532,
+        "overtime": 3708,
+        "status": "On Leave",
+        "created_at": "2023-10-05T02:10:19.736Z",
+        "updated_at": "2023-10-04T09:20:39.408Z",
+        "employee_id": "53d82c49-f023-423d-9358-1d21cd4af3b6"
+      },
+      {
+        "id": "47d48d8f-10b3-46d4-a336-7753e9d871b5",
+        "date": "2023-10-04T20:22:31.767Z",
+        "time_in": "2023-10-04T23:51:37.333Z",
+        "time_out": "2023-10-04T13:05:32.212Z",
+        "hours_worked": 3946,
+        "overtime": 21231,
+        "status": "Working Remotely",
+        "created_at": "2023-10-04T06:10:05.222Z",
+        "updated_at": "2023-10-04T10:08:22.232Z",
+        "employee_id": "ed61e52e-18e3-4c5f-95c9-9be95103609f"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "a55af16c-1481-4994-88d4-792b15055e4f",
+        "email": "Ayden.Mueller64@roq.tech",
+        "firstName": "Sandra",
+        "lastName": "Crooks",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/787.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0271615e-3903-4e8e-a441-7691ce427850",
+        "email": "Hilbert_Effertz-Deckow@roq.tech",
+        "firstName": "Eric",
+        "lastName": "Cronin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1119.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "cf4e914c-b892-4415-b660-14a07cb9bbce",
+        "email": "Vern99@roq.tech",
+        "firstName": "Haylie",
+        "lastName": "Dare",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4256512",
+        "tenantId": null
+      },
+      {
+        "reference": "f8d95160-3926-4979-bb12-65493ebce38c",
+        "email": "Kenton.Stiedemann32@roq.tech",
+        "firstName": "Kiara",
+        "lastName": "Mohr",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/47.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1d457ca0-6ac3-4ba0-94c2-005e66b34b75",
+        "email": "Cheyanne.McDermott@roq.tech",
+        "firstName": "Orlando",
+        "lastName": "Schinner",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/847.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "fae6d6b5-aaa1-4f90-9161-1e363b4f6bbc",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 68118,
+        "hire_date": "2023-10-04T10:34:06.771Z",
+        "created_at": "2023-10-04T10:18:33.150Z",
+        "updated_at": "2023-10-04T23:47:26.249Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c661d109-96d9-470c-a115-070c193d7542",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Engineer",
+        "salary": 74459,
+        "hire_date": "2023-10-05T01:35:36.526Z",
+        "created_at": "2023-10-04T13:32:55.388Z",
+        "updated_at": "2023-10-04T21:21:24.905Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3f4f127d-e73e-4633-91d9-460c3b846e5a",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Analyst",
+        "salary": 97589,
+        "hire_date": "2023-10-04T17:51:04.498Z",
+        "created_at": "2023-10-04T08:45:10.386Z",
+        "updated_at": "2023-10-05T00:55:44.964Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "763fd57c-f3d2-486e-a383-4e35e155fca7",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Designer",
+        "salary": 91297,
+        "hire_date": "2023-10-04T18:03:23.655Z",
+        "created_at": "2023-10-05T02:33:21.598Z",
+        "updated_at": "2023-10-04T08:34:31.224Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "abf59c4a-94a4-40cd-bb09-8eb1e835920c",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Developer",
+        "salary": 42737,
+        "hire_date": "2023-10-04T22:10:19.406Z",
+        "created_at": "2023-10-04T23:44:12.419Z",
+        "updated_at": "2023-10-04T17:08:57.183Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "db38e4f0-54a0-4c16-ac0f-f537d3b1e6b4",
+        "name": "Sales",
+        "budget": 71898,
+        "location": "Floor 1",
+        "created_at": "2023-10-05T03:17:07.762Z",
+        "updated_at": "2023-10-05T01:14:42.551Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "abf59c4a-94a4-40cd-bb09-8eb1e835920c"
+      },
+      {
+        "id": "a52e8745-9ec0-4cc4-91f0-5d264ac1e517",
+        "name": "Marketing",
+        "budget": 30045,
+        "location": "Floor 2",
+        "created_at": "2023-10-04T19:29:32.382Z",
+        "updated_at": "2023-10-04T21:28:59.126Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "c661d109-96d9-470c-a115-070c193d7542"
+      },
+      {
+        "id": "30237f2b-69fd-439b-a39a-d495892753e5",
+        "name": "Finance",
+        "budget": 59938,
+        "location": "Floor 3",
+        "created_at": "2023-10-04T09:10:03.112Z",
+        "updated_at": "2023-10-04T15:03:28.065Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "fae6d6b5-aaa1-4f90-9161-1e363b4f6bbc"
+      },
+      {
+        "id": "9a009ca2-4415-49b2-b2a1-0e069b470be3",
+        "name": "Human Resources",
+        "budget": 74656,
+        "location": "Floor 4",
+        "created_at": "2023-10-04T11:00:24.104Z",
+        "updated_at": "2023-10-04T21:45:01.586Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "3f4f127d-e73e-4633-91d9-460c3b846e5a"
+      },
+      {
+        "id": "3df96514-5c2f-4696-91a4-2e52c182d057",
+        "name": "Operations",
+        "budget": 93902,
+        "location": "Floor 5",
+        "created_at": "2023-10-04T19:33:59.533Z",
+        "updated_at": "2023-10-04T19:47:59.539Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "c661d109-96d9-470c-a115-070c193d7542"
+      }
+    ],
+    "project": [
+      {
+        "id": "408751b6-cbce-4e9a-b4bc-e3cfd57a8eaf",
+        "name": "Project A",
+        "start_date": "2023-10-05T04:25:13.893Z",
+        "end_date": "2023-10-04T14:38:24.352Z",
+        "budget": 25315,
+        "created_at": "2023-10-04T19:27:28.763Z",
+        "updated_at": "2023-10-05T04:26:28.614Z",
+        "company_id": "main_entity_pk",
+        "department_id": "9a009ca2-4415-49b2-b2a1-0e069b470be3",
+        "manager_id": "fae6d6b5-aaa1-4f90-9161-1e363b4f6bbc"
+      },
+      {
+        "id": "08476970-c510-4dd2-a633-a75b5ebecea7",
+        "name": "Project B",
+        "start_date": "2023-10-04T15:08:52.074Z",
+        "end_date": "2023-10-04T23:29:24.008Z",
+        "budget": 95723,
+        "created_at": "2023-10-04T08:51:12.455Z",
+        "updated_at": "2023-10-04T18:46:56.561Z",
+        "company_id": "main_entity_pk",
+        "department_id": "db38e4f0-54a0-4c16-ac0f-f537d3b1e6b4",
+        "manager_id": "abf59c4a-94a4-40cd-bb09-8eb1e835920c"
+      },
+      {
+        "id": "bea25624-df0e-4589-b90e-3bb9971721d4",
+        "name": "Project C",
+        "start_date": "2023-10-04T05:06:08.408Z",
+        "end_date": "2023-10-05T01:41:17.657Z",
+        "budget": 81780,
+        "created_at": "2023-10-04T07:00:58.558Z",
+        "updated_at": "2023-10-04T18:55:15.253Z",
+        "company_id": "main_entity_pk",
+        "department_id": "3df96514-5c2f-4696-91a4-2e52c182d057",
+        "manager_id": "abf59c4a-94a4-40cd-bb09-8eb1e835920c"
+      },
+      {
+        "id": "b9287a46-eaf2-4625-aa30-9dc29361b50b",
+        "name": "Project D",
+        "start_date": "2023-10-04T18:51:52.766Z",
+        "end_date": "2023-10-04T23:36:39.031Z",
+        "budget": 85361,
+        "created_at": "2023-10-04T09:35:43.451Z",
+        "updated_at": "2023-10-04T21:48:35.343Z",
+        "company_id": "main_entity_pk",
+        "department_id": "9a009ca2-4415-49b2-b2a1-0e069b470be3",
+        "manager_id": "fae6d6b5-aaa1-4f90-9161-1e363b4f6bbc"
+      },
+      {
+        "id": "5ccba778-c880-4e12-9af8-25b45275cf3e",
+        "name": "Project E",
+        "start_date": "2023-10-04T19:45:59.719Z",
+        "end_date": "2023-10-05T02:49:37.021Z",
+        "budget": 13224,
+        "created_at": "2023-10-04T16:53:42.392Z",
+        "updated_at": "2023-10-05T01:10:37.941Z",
+        "company_id": "main_entity_pk",
+        "department_id": "db38e4f0-54a0-4c16-ac0f-f537d3b1e6b4",
+        "manager_id": "fae6d6b5-aaa1-4f90-9161-1e363b4f6bbc"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "dc33e68f-f505-40fa-88e6-484ab203efcb",
+        "date": "2023-10-05T04:40:21.616Z",
+        "time_in": "2023-10-04T06:06:57.999Z",
+        "time_out": "2023-10-04T08:25:28.327Z",
+        "hours_worked": 22133,
+        "overtime": 14448,
+        "status": "Present",
+        "created_at": "2023-10-04T20:41:24.082Z",
+        "updated_at": "2023-10-04T19:12:09.177Z",
+        "employee_id": "763fd57c-f3d2-486e-a383-4e35e155fca7"
+      },
+      {
+        "id": "2a7794a4-5b89-483f-9590-4aee0779f23b",
+        "date": "2023-10-05T03:16:08.646Z",
+        "time_in": "2023-10-05T00:11:34.838Z",
+        "time_out": "2023-10-04T21:00:46.914Z",
+        "hours_worked": 82912,
+        "overtime": 51717,
+        "status": "Absent",
+        "created_at": "2023-10-04T18:35:37.361Z",
+        "updated_at": "2023-10-04T13:09:35.457Z",
+        "employee_id": "c661d109-96d9-470c-a115-070c193d7542"
+      },
+      {
+        "id": "3f7b3b8c-c50e-4d8c-9339-756ef931878c",
+        "date": "2023-10-05T03:41:12.729Z",
+        "time_in": "2023-10-04T07:16:12.642Z",
+        "time_out": "2023-10-04T21:25:46.822Z",
+        "hours_worked": 5138,
+        "overtime": 26075,
+        "status": "Late",
+        "created_at": "2023-10-04T08:15:36.002Z",
+        "updated_at": "2023-10-04T07:14:45.057Z",
+        "employee_id": "fae6d6b5-aaa1-4f90-9161-1e363b4f6bbc"
+      },
+      {
+        "id": "95978bf6-bf4d-4d1e-9b04-3fd11fcd94e7",
+        "date": "2023-10-05T00:36:01.273Z",
+        "time_in": "2023-10-05T04:32:58.962Z",
+        "time_out": "2023-10-04T14:04:32.260Z",
+        "hours_worked": 72916,
+        "overtime": 54366,
+        "status": "On Leave",
+        "created_at": "2023-10-05T00:22:59.619Z",
+        "updated_at": "2023-10-04T23:50:28.353Z",
+        "employee_id": "3f4f127d-e73e-4633-91d9-460c3b846e5a"
+      },
+      {
+        "id": "c3cb861c-3e83-4a85-8da7-0ac3c2945212",
+        "date": "2023-10-04T06:51:55.385Z",
+        "time_in": "2023-10-04T14:02:50.699Z",
+        "time_out": "2023-10-04T12:09:21.788Z",
+        "hours_worked": 54236,
+        "overtime": 67453,
+        "status": "Working Remotely",
+        "created_at": "2023-10-05T03:21:43.828Z",
+        "updated_at": "2023-10-04T09:48:18.383Z",
+        "employee_id": "763fd57c-f3d2-486e-a383-4e35e155fca7"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4acee6b1-8cb9-4cf4-88b6-8971c74cb417",
+        "email": "Maida_Walker52@roq.tech",
+        "firstName": "Aniya",
+        "lastName": "Stoltenberg",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/958.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "75608fcc-f7d1-4789-aaa7-a3ab51bf7479",
+        "email": "Willow_Spinka@roq.tech",
+        "firstName": "Allen",
+        "lastName": "Pagac",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/512.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1d5acfff-d4ba-4ad4-9d1f-ea7fcff32b5a",
+        "email": "Brooks48@roq.tech",
+        "firstName": "Sienna",
+        "lastName": "Blanda",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5492881",
+        "tenantId": null
+      },
+      {
+        "reference": "06fa3a38-1082-4b40-bdbc-ee90d56ee04a",
+        "email": "Eve_Cruickshank@roq.tech",
+        "firstName": "Jazmyne",
+        "lastName": "Pfeffer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/78151669",
+        "tenantId": null
+      },
+      {
+        "reference": "64b84e61-d22d-476c-8b55-3cc94431f715",
+        "email": "Gilbert13@roq.tech",
+        "firstName": "Jackeline",
+        "lastName": "Stanton-Williamson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/640.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "11754dc4-3120-4f90-b043-adcee4136a1a",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 47041,
+        "hire_date": "2023-10-04T08:14:06.984Z",
+        "created_at": "2023-10-04T09:37:17.024Z",
+        "updated_at": "2023-10-04T21:56:04.152Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "eba67605-8570-4869-8111-069fca73fe0f",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Engineer",
+        "salary": 2448,
+        "hire_date": "2023-10-05T03:48:45.136Z",
+        "created_at": "2023-10-04T05:49:08.400Z",
+        "updated_at": "2023-10-04T22:06:56.276Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4b721d08-a96f-4795-8585-f89949931240",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Analyst",
+        "salary": 52667,
+        "hire_date": "2023-10-04T13:55:34.908Z",
+        "created_at": "2023-10-04T17:26:41.396Z",
+        "updated_at": "2023-10-04T08:25:26.380Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a24c45aa-493b-4cb5-89d0-44a4bb34f79e",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Supervisor",
+        "salary": 8696,
+        "hire_date": "2023-10-04T20:06:15.164Z",
+        "created_at": "2023-10-04T22:23:29.018Z",
+        "updated_at": "2023-10-05T01:32:00.522Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "01744e37-c96e-45d3-b282-20fccb2ee91c",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Coordinator",
+        "salary": 33891,
+        "hire_date": "2023-10-04T15:30:59.539Z",
+        "created_at": "2023-10-04T15:06:30.438Z",
+        "updated_at": "2023-10-04T14:38:10.829Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "62ef5f02-4bd8-4055-933f-eefaee12e1c7",
+        "name": "Sales",
+        "budget": 94829,
+        "location": "New York",
+        "created_at": "2023-10-04T09:55:03.428Z",
+        "updated_at": "2023-10-04T09:28:46.815Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "a24c45aa-493b-4cb5-89d0-44a4bb34f79e"
+      },
+      {
+        "id": "08960ec1-e975-4a90-af4f-6b531393434c",
+        "name": "Marketing",
+        "budget": 21167,
+        "location": "Los Angeles",
+        "created_at": "2023-10-04T17:46:23.499Z",
+        "updated_at": "2023-10-04T22:18:46.693Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "eba67605-8570-4869-8111-069fca73fe0f"
+      },
+      {
+        "id": "07544cfb-d291-466f-9297-f0db2ed88722",
+        "name": "Finance",
+        "budget": 14558,
+        "location": "Chicago",
+        "created_at": "2023-10-04T08:03:42.084Z",
+        "updated_at": "2023-10-04T06:52:45.564Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "eba67605-8570-4869-8111-069fca73fe0f"
+      },
+      {
+        "id": "932d4b12-437e-4445-a28e-8f71db2d775f",
+        "name": "Human Resources",
+        "budget": 5795,
+        "location": "Houston",
+        "created_at": "2023-10-05T02:50:19.056Z",
+        "updated_at": "2023-10-05T02:26:37.019Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "11754dc4-3120-4f90-b043-adcee4136a1a"
+      },
+      {
+        "id": "a5a296c0-cd8c-46f1-80f1-345f728f30b8",
+        "name": "Operations",
+        "budget": 39970,
+        "location": "Miami",
+        "created_at": "2023-10-04T07:37:24.087Z",
+        "updated_at": "2023-10-04T23:20:15.106Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "4b721d08-a96f-4795-8585-f89949931240"
+      }
+    ],
+    "project": [
+      {
+        "id": "d2d0c6c7-9b90-44fc-b55f-d34c83048737",
+        "name": "Project A",
+        "start_date": "2023-10-04T18:30:20.969Z",
+        "end_date": "2023-10-04T16:58:45.508Z",
+        "budget": 38491,
+        "created_at": "2023-10-05T00:10:45.036Z",
+        "updated_at": "2023-10-04T10:51:56.451Z",
+        "company_id": "main_entity_pk",
+        "department_id": "08960ec1-e975-4a90-af4f-6b531393434c",
+        "manager_id": "4b721d08-a96f-4795-8585-f89949931240"
+      },
+      {
+        "id": "63505b78-7e3a-48dd-8231-085735a8dfe6",
+        "name": "Project B",
+        "start_date": "2023-10-04T21:48:41.082Z",
+        "end_date": "2023-10-04T17:53:35.438Z",
+        "budget": 33087,
+        "created_at": "2023-10-04T18:13:10.111Z",
+        "updated_at": "2023-10-04T06:03:52.300Z",
+        "company_id": "main_entity_pk",
+        "department_id": "07544cfb-d291-466f-9297-f0db2ed88722",
+        "manager_id": "4b721d08-a96f-4795-8585-f89949931240"
+      },
+      {
+        "id": "c1f21f3a-78fa-4075-8c5d-80266eb7b724",
+        "name": "Project C",
+        "start_date": "2023-10-04T06:37:51.079Z",
+        "end_date": "2023-10-04T08:00:26.806Z",
+        "budget": 19138,
+        "created_at": "2023-10-04T16:09:09.885Z",
+        "updated_at": "2023-10-05T04:57:19.096Z",
+        "company_id": "main_entity_pk",
+        "department_id": "a5a296c0-cd8c-46f1-80f1-345f728f30b8",
+        "manager_id": "11754dc4-3120-4f90-b043-adcee4136a1a"
+      },
+      {
+        "id": "8be66ef6-2ad8-49a2-919d-5162d17b703f",
+        "name": "Project D",
+        "start_date": "2023-10-04T05:11:33.908Z",
+        "end_date": "2023-10-04T19:35:55.448Z",
+        "budget": 88337,
+        "created_at": "2023-10-04T23:29:16.410Z",
+        "updated_at": "2023-10-04T21:26:24.951Z",
+        "company_id": "main_entity_pk",
+        "department_id": "62ef5f02-4bd8-4055-933f-eefaee12e1c7",
+        "manager_id": "4b721d08-a96f-4795-8585-f89949931240"
+      },
+      {
+        "id": "d33a4c00-e3fd-40fb-a5f3-9d35a38d29ab",
+        "name": "Project E",
+        "start_date": "2023-10-04T19:33:30.653Z",
+        "end_date": "2023-10-04T18:31:43.692Z",
+        "budget": 43862,
+        "created_at": "2023-10-04T10:08:08.668Z",
+        "updated_at": "2023-10-04T07:25:02.428Z",
+        "company_id": "main_entity_pk",
+        "department_id": "a5a296c0-cd8c-46f1-80f1-345f728f30b8",
+        "manager_id": "eba67605-8570-4869-8111-069fca73fe0f"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "ab4fa24e-5ba5-410e-b524-ac0d23560e42",
+        "date": "2023-10-04T18:03:57.349Z",
+        "time_in": "2023-10-04T07:21:25.716Z",
+        "time_out": "2023-10-04T08:52:24.729Z",
+        "hours_worked": 9475,
+        "overtime": 70320,
+        "status": "Present",
+        "created_at": "2023-10-04T20:25:08.643Z",
+        "updated_at": "2023-10-04T19:31:41.829Z",
+        "employee_id": "eba67605-8570-4869-8111-069fca73fe0f"
+      },
+      {
+        "id": "a7edae6d-1f4a-4264-b464-61996cbbb80b",
+        "date": "2023-10-04T15:59:10.244Z",
+        "time_in": "2023-10-04T16:05:18.779Z",
+        "time_out": "2023-10-04T17:36:12.949Z",
+        "hours_worked": 9435,
+        "overtime": 50219,
+        "status": "Absent",
+        "created_at": "2023-10-04T09:23:22.935Z",
+        "updated_at": "2023-10-04T23:21:05.103Z",
+        "employee_id": "a24c45aa-493b-4cb5-89d0-44a4bb34f79e"
+      },
+      {
+        "id": "db9cbced-c868-47e5-a1d4-0785f355aaae",
+        "date": "2023-10-04T12:53:01.207Z",
+        "time_in": "2023-10-04T08:22:09.381Z",
+        "time_out": "2023-10-04T08:22:14.693Z",
+        "hours_worked": 44475,
+        "overtime": 28442,
+        "status": "Late",
+        "created_at": "2023-10-04T16:35:29.304Z",
+        "updated_at": "2023-10-05T03:35:20.467Z",
+        "employee_id": "11754dc4-3120-4f90-b043-adcee4136a1a"
+      },
+      {
+        "id": "b25f8ca5-b0c7-4666-868e-078a77560f19",
+        "date": "2023-10-05T01:52:24.911Z",
+        "time_in": "2023-10-04T16:32:39.588Z",
+        "time_out": "2023-10-04T05:34:05.253Z",
+        "hours_worked": 47009,
+        "overtime": 15,
+        "status": "On Leave",
+        "created_at": "2023-10-04T07:18:22.073Z",
+        "updated_at": "2023-10-05T00:54:24.684Z",
+        "employee_id": "a24c45aa-493b-4cb5-89d0-44a4bb34f79e"
+      },
+      {
+        "id": "75eb8752-2b5b-4a08-906a-4407d9a6917a",
+        "date": "2023-10-04T16:36:17.392Z",
+        "time_in": "2023-10-04T06:30:29.593Z",
+        "time_out": "2023-10-04T09:34:11.976Z",
+        "hours_worked": 97332,
+        "overtime": 83886,
+        "status": "Remote",
+        "created_at": "2023-10-04T17:51:12.911Z",
+        "updated_at": "2023-10-05T04:20:01.286Z",
+        "employee_id": "4b721d08-a96f-4795-8585-f89949931240"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "81133f1b-133f-46bd-b432-21ca7dbc809e",
+        "email": "Lorna44@roq.tech",
+        "firstName": "Savannah",
+        "lastName": "Bauch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30512663",
+        "tenantId": null
+      },
+      {
+        "reference": "2672f57d-3b38-410c-a5f5-9c77d09a31fb",
+        "email": "Clare_Shanahan-Corwin53@roq.tech",
+        "firstName": "Dakota",
+        "lastName": "Romaguera",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69693763",
+        "tenantId": null
+      },
+      {
+        "reference": "80b171b4-2079-4b5d-b2be-959b63e41379",
+        "email": "Sage94@roq.tech",
+        "firstName": "Paolo",
+        "lastName": "Kassulke",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/47971601",
+        "tenantId": null
+      },
+      {
+        "reference": "5657f159-d805-48a7-a701-f677499a3d35",
+        "email": "Maci10@roq.tech",
+        "firstName": "Krystina",
+        "lastName": "Dickinson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/95033808",
+        "tenantId": null
+      },
+      {
+        "reference": "b00abc7b-16f2-479e-b73c-bc639443985d",
+        "email": "Keyon_Champlin@roq.tech",
+        "firstName": "Jocelyn",
+        "lastName": "Corkery",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/140.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "b6c32cb3-62c1-46e9-90fd-09b1b8910219",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Software Engineer",
+        "salary": 17159,
+        "hire_date": "2023-10-04T15:58:56.527Z",
+        "created_at": "2023-10-04T12:18:25.029Z",
+        "updated_at": "2023-10-04T08:53:50.415Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f8b51cc1-79b5-4376-9590-c48dc397361d",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Sales Manager",
+        "salary": 77259,
+        "hire_date": "2023-10-04T10:43:35.058Z",
+        "created_at": "2023-10-04T23:44:05.885Z",
+        "updated_at": "2023-10-05T01:28:43.944Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ce236fcd-331d-4ec6-aed8-983804c3a511",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Accountant",
+        "salary": 57927,
+        "hire_date": "2023-10-05T04:58:17.313Z",
+        "created_at": "2023-10-04T10:07:40.405Z",
+        "updated_at": "2023-10-05T04:32:24.547Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ca657019-16c2-4385-b73f-7b5a08ec8e40",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "HR Coordinator",
+        "salary": 77310,
+        "hire_date": "2023-10-04T14:03:56.842Z",
+        "created_at": "2023-10-04T14:24:27.023Z",
+        "updated_at": "2023-10-04T19:32:09.745Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1ec52d2d-8ac3-447c-b5bd-5268fc8f8858",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Project Manager",
+        "salary": 35530,
+        "hire_date": "2023-10-04T13:46:25.678Z",
+        "created_at": "2023-10-04T18:24:52.550Z",
+        "updated_at": "2023-10-04T13:40:17.593Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "e1ee4d4f-cbac-4462-a4d7-6491d97e5f59",
+        "name": "Engineering",
+        "budget": 24923,
+        "location": "Floor 10",
+        "created_at": "2023-10-05T03:37:27.893Z",
+        "updated_at": "2023-10-04T11:14:38.305Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "b6c32cb3-62c1-46e9-90fd-09b1b8910219"
+      },
+      {
+        "id": "2745c88f-6d14-4abf-8db4-7bd753064892",
+        "name": "Sales",
+        "budget": 27700,
+        "location": "Floor 5",
+        "created_at": "2023-10-04T21:12:44.490Z",
+        "updated_at": "2023-10-04T10:06:58.682Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "f8b51cc1-79b5-4376-9590-c48dc397361d"
+      },
+      {
+        "id": "fe513762-2447-43dd-a5dd-7824672b5638",
+        "name": "Finance",
+        "budget": 8998,
+        "location": "Floor 3",
+        "created_at": "2023-10-04T09:57:51.536Z",
+        "updated_at": "2023-10-05T03:14:48.270Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "ca657019-16c2-4385-b73f-7b5a08ec8e40"
+      },
+      {
+        "id": "23112d79-eb12-4d31-8b6d-849d63efceeb",
+        "name": "Human Resources",
+        "budget": 14712,
+        "location": "Floor 8",
+        "created_at": "2023-10-04T12:16:33.934Z",
+        "updated_at": "2023-10-04T12:04:06.930Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "1ec52d2d-8ac3-447c-b5bd-5268fc8f8858"
+      },
+      {
+        "id": "0b46ae24-f3d3-443a-a5ed-2387d11da363",
+        "name": "Marketing",
+        "budget": 53498,
+        "location": "Floor 2",
+        "created_at": "2023-10-05T01:04:35.958Z",
+        "updated_at": "2023-10-04T15:01:42.423Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "b6c32cb3-62c1-46e9-90fd-09b1b8910219"
+      }
+    ],
+    "project": [
+      {
+        "id": "9d23a1fd-d55f-4fdc-b50e-dcf4b238f267",
+        "name": "Project A",
+        "start_date": "2023-10-04T16:23:45.864Z",
+        "end_date": "2023-10-04T07:07:59.793Z",
+        "budget": 68686,
+        "created_at": "2023-10-04T11:05:24.906Z",
+        "updated_at": "2023-10-05T00:42:10.944Z",
+        "company_id": "main_entity_pk",
+        "department_id": "0b46ae24-f3d3-443a-a5ed-2387d11da363",
+        "manager_id": "f8b51cc1-79b5-4376-9590-c48dc397361d"
+      },
+      {
+        "id": "7d7d8d29-143e-4168-8722-46015e0068ed",
+        "name": "Project B",
+        "start_date": "2023-10-04T15:15:11.599Z",
+        "end_date": "2023-10-05T00:00:02.291Z",
+        "budget": 35049,
+        "created_at": "2023-10-04T09:16:27.463Z",
+        "updated_at": "2023-10-05T02:14:15.279Z",
+        "company_id": "main_entity_pk",
+        "department_id": "fe513762-2447-43dd-a5dd-7824672b5638",
+        "manager_id": "ce236fcd-331d-4ec6-aed8-983804c3a511"
+      },
+      {
+        "id": "2f4a8d5a-c648-470e-856c-ce227d727d87",
+        "name": "Project C",
+        "start_date": "2023-10-04T12:01:18.643Z",
+        "end_date": "2023-10-05T00:47:15.629Z",
+        "budget": 11651,
+        "created_at": "2023-10-05T03:04:51.059Z",
+        "updated_at": "2023-10-05T01:30:07.096Z",
+        "company_id": "main_entity_pk",
+        "department_id": "23112d79-eb12-4d31-8b6d-849d63efceeb",
+        "manager_id": "ca657019-16c2-4385-b73f-7b5a08ec8e40"
+      },
+      {
+        "id": "61e39fb4-c7b7-4e9d-aacd-ee28f9dda888",
+        "name": "Project D",
+        "start_date": "2023-10-05T03:03:38.164Z",
+        "end_date": "2023-10-04T09:23:14.881Z",
+        "budget": 20140,
+        "created_at": "2023-10-04T16:16:14.469Z",
+        "updated_at": "2023-10-04T22:12:54.803Z",
+        "company_id": "main_entity_pk",
+        "department_id": "2745c88f-6d14-4abf-8db4-7bd753064892",
+        "manager_id": "ca657019-16c2-4385-b73f-7b5a08ec8e40"
+      },
+      {
+        "id": "a12bb0a3-bf03-4fa8-94fb-7adfceaaeef9",
+        "name": "Project E",
+        "start_date": "2023-10-04T11:53:12.983Z",
+        "end_date": "2023-10-05T04:59:22.433Z",
+        "budget": 32630,
+        "created_at": "2023-10-04T08:14:02.667Z",
+        "updated_at": "2023-10-05T03:44:23.577Z",
+        "company_id": "main_entity_pk",
+        "department_id": "fe513762-2447-43dd-a5dd-7824672b5638",
+        "manager_id": "b6c32cb3-62c1-46e9-90fd-09b1b8910219"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "d079a546-333e-41e2-817a-fd4a4489ea1f",
+        "date": "2023-10-04T12:36:06.830Z",
+        "time_in": "2023-10-04T17:13:46.316Z",
+        "time_out": "2023-10-04T19:40:15.847Z",
+        "hours_worked": 20293,
+        "overtime": 9331,
+        "status": "Present",
+        "created_at": "2023-10-04T22:35:45.921Z",
+        "updated_at": "2023-10-04T16:28:24.085Z",
+        "employee_id": "1ec52d2d-8ac3-447c-b5bd-5268fc8f8858"
+      },
+      {
+        "id": "54bb4887-1695-4e88-a923-60fc3a67f155",
+        "date": "2023-10-04T12:25:33.049Z",
+        "time_in": "2023-10-05T02:07:35.871Z",
+        "time_out": "2023-10-04T16:04:49.032Z",
+        "hours_worked": 91437,
+        "overtime": 72872,
+        "status": "Absent",
+        "created_at": "2023-10-04T08:56:59.533Z",
+        "updated_at": "2023-10-04T23:26:34.610Z",
+        "employee_id": "1ec52d2d-8ac3-447c-b5bd-5268fc8f8858"
+      },
+      {
+        "id": "8151c01d-816e-452a-860e-42240e68014e",
+        "date": "2023-10-04T15:31:52.010Z",
+        "time_in": "2023-10-04T22:52:32.519Z",
+        "time_out": "2023-10-04T08:51:13.399Z",
+        "hours_worked": 89248,
+        "overtime": 73988,
+        "status": "Late",
+        "created_at": "2023-10-04T09:18:49.600Z",
+        "updated_at": "2023-10-04T22:53:42.325Z",
+        "employee_id": "b6c32cb3-62c1-46e9-90fd-09b1b8910219"
+      },
+      {
+        "id": "4e01ddd4-0cc3-4640-bce3-8537c928666b",
+        "date": "2023-10-04T17:03:55.918Z",
+        "time_in": "2023-10-04T07:37:59.410Z",
+        "time_out": "2023-10-04T23:02:41.580Z",
+        "hours_worked": 74032,
+        "overtime": 98996,
+        "status": "On Leave",
+        "created_at": "2023-10-04T05:50:43.007Z",
+        "updated_at": "2023-10-05T00:45:39.021Z",
+        "employee_id": "ce236fcd-331d-4ec6-aed8-983804c3a511"
+      },
+      {
+        "id": "69563ea4-24fc-41e1-b228-244347e48e3b",
+        "date": "2023-10-04T12:56:46.213Z",
+        "time_in": "2023-10-04T10:27:41.841Z",
+        "time_out": "2023-10-04T18:49:09.608Z",
+        "hours_worked": 35802,
+        "overtime": 30424,
+        "status": "Working Remotely",
+        "created_at": "2023-10-04T14:35:18.083Z",
+        "updated_at": "2023-10-04T10:54:27.330Z",
+        "employee_id": "ca657019-16c2-4385-b73f-7b5a08ec8e40"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "cfd500b1-4898-4e73-8f05-998cfb50e8d6",
+        "email": "Murray.Boehm@roq.tech",
+        "firstName": "Elody",
+        "lastName": "Bosco",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/919.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "353a4f6c-64ce-4ce1-99f8-f4ef43b85160",
+        "email": "Alberta_Little@roq.tech",
+        "firstName": "Pauline",
+        "lastName": "McCullough",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/884.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4d8d1f84-c07f-4a8a-9cda-c3a72a0ea5eb",
+        "email": "Claudie.Kessler77@roq.tech",
+        "firstName": "Gilberto",
+        "lastName": "Murazik-Schmeler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/602.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a8abb83f-71f2-447a-a97a-e30b748bd5cf",
+        "email": "Marlin14@roq.tech",
+        "firstName": "Wayne",
+        "lastName": "Abbott",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1087.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7d9d16df-4fe1-4303-b67d-a42e9fdc3318",
+        "email": "Odell.Frami15@roq.tech",
+        "firstName": "Carter",
+        "lastName": "Upton",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/39.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "9528fccf-371c-4116-8ed2-5dd85f7b8b76",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 14511,
+        "hire_date": "2023-10-04T21:25:08.153Z",
+        "created_at": "2023-10-05T03:50:46.201Z",
+        "updated_at": "2023-10-04T12:31:52.552Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4e3eb934-4083-4ad0-bb67-fc9dda4769ad",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Engineer",
+        "salary": 30203,
+        "hire_date": "2023-10-04T13:15:00.533Z",
+        "created_at": "2023-10-05T01:11:23.288Z",
+        "updated_at": "2023-10-04T18:02:11.196Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3d255c5e-fad9-4a5e-97d7-5f83be1c0bbb",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Analyst",
+        "salary": 1006,
+        "hire_date": "2023-10-04T13:01:56.988Z",
+        "created_at": "2023-10-04T12:51:08.081Z",
+        "updated_at": "2023-10-04T09:48:46.828Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "90d472f6-8c78-446c-aa73-2eecbb5e245c",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Supervisor",
+        "salary": 32109,
+        "hire_date": "2023-10-05T02:55:56.813Z",
+        "created_at": "2023-10-04T08:36:23.978Z",
+        "updated_at": "2023-10-04T15:49:52.508Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "40e02228-c179-4225-b217-213d378ded5b",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "position": "Coordinator",
+        "salary": 7612,
+        "hire_date": "2023-10-04T19:11:34.428Z",
+        "created_at": "2023-10-04T16:56:01.284Z",
+        "updated_at": "2023-10-04T12:29:28.833Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "6e0cae19-d76f-431d-8fbf-7223220c5881",
+        "name": "Sales",
+        "budget": 77954,
+        "location": "New York",
+        "created_at": "2023-10-04T18:40:22.791Z",
+        "updated_at": "2023-10-04T23:08:04.541Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "4e3eb934-4083-4ad0-bb67-fc9dda4769ad"
+      },
+      {
+        "id": "5de76c4d-86c3-4906-a524-c8a964f33ebb",
+        "name": "Marketing",
+        "budget": 90884,
+        "location": "Los Angeles",
+        "created_at": "2023-10-04T07:46:21.103Z",
+        "updated_at": "2023-10-04T21:57:40.080Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "9528fccf-371c-4116-8ed2-5dd85f7b8b76"
+      },
+      {
+        "id": "2c9b0850-7fba-4b35-9930-d14197acc6c0",
+        "name": "Finance",
+        "budget": 92647,
+        "location": "Chicago",
+        "created_at": "2023-10-04T14:17:30.189Z",
+        "updated_at": "2023-10-05T02:27:34.750Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "4e3eb934-4083-4ad0-bb67-fc9dda4769ad"
+      },
+      {
+        "id": "e6ee4f7f-4ca4-4f3c-9995-630b6b3b9143",
+        "name": "Human Resources",
+        "budget": 32277,
+        "location": "Houston",
+        "created_at": "2023-10-04T09:07:18.765Z",
+        "updated_at": "2023-10-04T06:59:20.104Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "9528fccf-371c-4116-8ed2-5dd85f7b8b76"
+      },
+      {
+        "id": "5ad0a48d-dcf5-48f6-97f4-70deafdaac42",
+        "name": "Operations",
+        "budget": 98141,
+        "location": "Miami",
+        "created_at": "2023-10-04T07:01:35.036Z",
+        "updated_at": "2023-10-04T14:55:09.750Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "90d472f6-8c78-446c-aa73-2eecbb5e245c"
+      }
+    ],
+    "project": [
+      {
+        "id": "134b67c9-5261-47c6-a011-bd213de334ed",
+        "name": "Project A",
+        "start_date": "2023-10-05T02:32:37.674Z",
+        "end_date": "2023-10-04T18:35:23.703Z",
+        "budget": 42017,
+        "created_at": "2023-10-04T18:08:53.825Z",
+        "updated_at": "2023-10-04T21:11:25.465Z",
+        "company_id": "main_entity_pk",
+        "department_id": "5ad0a48d-dcf5-48f6-97f4-70deafdaac42",
+        "manager_id": "90d472f6-8c78-446c-aa73-2eecbb5e245c"
+      },
+      {
+        "id": "a64946e3-ab97-42aa-ba0c-8df353c3e0be",
+        "name": "Project B",
+        "start_date": "2023-10-04T14:19:51.045Z",
+        "end_date": "2023-10-04T06:04:51.996Z",
+        "budget": 1070,
+        "created_at": "2023-10-04T10:17:10.190Z",
+        "updated_at": "2023-10-04T22:31:06.251Z",
+        "company_id": "main_entity_pk",
+        "department_id": "e6ee4f7f-4ca4-4f3c-9995-630b6b3b9143",
+        "manager_id": "90d472f6-8c78-446c-aa73-2eecbb5e245c"
+      },
+      {
+        "id": "c0d7e601-ea56-4dad-8832-0ca736adb07c",
+        "name": "Project C",
+        "start_date": "2023-10-04T12:36:09.383Z",
+        "end_date": "2023-10-04T12:18:59.092Z",
+        "budget": 47224,
+        "created_at": "2023-10-04T05:10:33.631Z",
+        "updated_at": "2023-10-04T05:45:19.261Z",
+        "company_id": "main_entity_pk",
+        "department_id": "6e0cae19-d76f-431d-8fbf-7223220c5881",
+        "manager_id": "3d255c5e-fad9-4a5e-97d7-5f83be1c0bbb"
+      },
+      {
+        "id": "7d7dff83-8cce-4337-8385-48fc50453857",
+        "name": "Project D",
+        "start_date": "2023-10-04T19:34:36.456Z",
+        "end_date": "2023-10-04T14:45:20.530Z",
+        "budget": 13566,
+        "created_at": "2023-10-04T22:06:21.176Z",
+        "updated_at": "2023-10-04T11:17:27.498Z",
+        "company_id": "main_entity_pk",
+        "department_id": "2c9b0850-7fba-4b35-9930-d14197acc6c0",
+        "manager_id": "9528fccf-371c-4116-8ed2-5dd85f7b8b76"
+      },
+      {
+        "id": "48f6afc8-ddac-4eb9-b0c3-f6ba73536b2c",
+        "name": "Project E",
+        "start_date": "2023-10-04T07:09:04.877Z",
+        "end_date": "2023-10-04T06:27:28.799Z",
+        "budget": 89401,
+        "created_at": "2023-10-04T18:07:08.113Z",
+        "updated_at": "2023-10-04T06:15:21.680Z",
+        "company_id": "main_entity_pk",
+        "department_id": "e6ee4f7f-4ca4-4f3c-9995-630b6b3b9143",
+        "manager_id": "90d472f6-8c78-446c-aa73-2eecbb5e245c"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "02ad8871-28f9-498a-a89c-f27623f661b6",
+        "date": "2023-10-05T00:43:29.194Z",
+        "time_in": "2023-10-04T17:28:28.251Z",
+        "time_out": "2023-10-04T11:33:04.327Z",
+        "hours_worked": 39103,
+        "overtime": 4993,
+        "status": "Present",
+        "created_at": "2023-10-04T11:42:40.703Z",
+        "updated_at": "2023-10-05T01:06:30.049Z",
+        "employee_id": "40e02228-c179-4225-b217-213d378ded5b"
+      },
+      {
+        "id": "92c67270-0969-4356-8e61-4ecbb233ed1c",
+        "date": "2023-10-05T01:07:54.112Z",
+        "time_in": "2023-10-04T23:35:01.083Z",
+        "time_out": "2023-10-04T15:28:41.865Z",
+        "hours_worked": 97944,
+        "overtime": 38838,
+        "status": "Absent",
+        "created_at": "2023-10-04T21:32:15.866Z",
+        "updated_at": "2023-10-04T06:33:14.226Z",
+        "employee_id": "40e02228-c179-4225-b217-213d378ded5b"
+      },
+      {
+        "id": "479bf408-da33-4114-bec8-2fe3a2bd78ee",
+        "date": "2023-10-05T03:13:38.759Z",
+        "time_in": "2023-10-05T03:23:40.970Z",
+        "time_out": "2023-10-04T11:06:43.615Z",
+        "hours_worked": 80603,
+        "overtime": 2969,
+        "status": "Late",
+        "created_at": "2023-10-05T00:34:41.815Z",
+        "updated_at": "2023-10-04T14:55:10.922Z",
+        "employee_id": "40e02228-c179-4225-b217-213d378ded5b"
+      },
+      {
+        "id": "558a1bff-be78-487c-b143-4540ed6034d5",
+        "date": "2023-10-04T16:50:20.416Z",
+        "time_in": "2023-10-05T03:38:36.287Z",
+        "time_out": "2023-10-05T01:33:06.967Z",
+        "hours_worked": 80571,
+        "overtime": 8538,
+        "status": "On Leave",
+        "created_at": "2023-10-04T19:30:16.135Z",
+        "updated_at": "2023-10-04T05:55:45.290Z",
+        "employee_id": "90d472f6-8c78-446c-aa73-2eecbb5e245c"
+      },
+      {
+        "id": "26b61fe4-7b8b-4e63-93c2-7771b4195955",
+        "date": "2023-10-04T11:49:48.617Z",
+        "time_in": "2023-10-04T22:03:46.463Z",
+        "time_out": "2023-10-04T08:40:24.496Z",
+        "hours_worked": 37064,
+        "overtime": 37918,
+        "status": "Remote",
+        "created_at": "2023-10-04T08:02:24.173Z",
+        "updated_at": "2023-10-04T14:47:51.308Z",
+        "employee_id": "3d255c5e-fad9-4a5e-97d7-5f83be1c0bbb"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "48883e4b-4738-4a33-9369-2d7e9c6a60bf",
+        "email": "Mayra87@roq.tech",
+        "firstName": "Kole",
+        "lastName": "Welch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1011.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7fc3772e-6bb1-4f4f-83e2-4c48c36609b7",
+        "email": "Ashley_Dooley35@roq.tech",
+        "firstName": "Rosalee",
+        "lastName": "Marquardt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/985.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b8864385-a08c-4243-b1a4-34bb1d1f5876",
+        "email": "Orion_Gislason@roq.tech",
+        "firstName": "Pablo",
+        "lastName": "Flatley",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/781.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "72c29f38-7dfb-495b-a0b2-db4e3d0e0ff8",
+        "email": "Gavin.Blick@roq.tech",
+        "firstName": "Bernice",
+        "lastName": "Sporer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6907850",
+        "tenantId": null
+      },
+      {
+        "reference": "2dbfcf83-477c-40c0-bc80-ac05df98ddec",
+        "email": "Alphonso.DuBuque@roq.tech",
+        "firstName": "Skylar",
+        "lastName": "Funk",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/671.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "employee": [
+      {
+        "id": "b01b788d-beb5-4491-99eb-6d6148e6407c",
+        "first_name": "John",
+        "last_name": "Doe",
+        "position": "Manager",
+        "salary": 56072,
+        "hire_date": "2023-10-04T20:44:47.738Z",
+        "created_at": "2023-10-04T23:47:25.377Z",
+        "updated_at": "2023-10-04T14:16:20.710Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a85a3599-03bf-4c32-9a35-4cd574deb336",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Developer",
+        "salary": 68459,
+        "hire_date": "2023-10-04T11:06:58.393Z",
+        "created_at": "2023-10-04T19:09:47.145Z",
+        "updated_at": "2023-10-04T19:44:23.516Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bb3a7d84-d5c0-494b-b4d7-60ff6695a6ba",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "position": "Designer",
+        "salary": 49285,
+        "hire_date": "2023-10-04T13:04:53.912Z",
+        "created_at": "2023-10-04T20:00:10.366Z",
+        "updated_at": "2023-10-04T11:36:52.848Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7f8c4bbb-145e-4dbd-8ade-4921c4ea5b3c",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "position": "Analyst",
+        "salary": 37656,
+        "hire_date": "2023-10-04T23:36:10.229Z",
+        "created_at": "2023-10-04T23:30:41.564Z",
+        "updated_at": "2023-10-04T12:33:32.680Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ceaf2c99-ab44-4182-9a72-350685243c92",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "position": "Salesperson",
+        "salary": 55840,
+        "hire_date": "2023-10-04T15:01:38.324Z",
+        "created_at": "2023-10-04T07:36:22.257Z",
+        "updated_at": "2023-10-05T02:28:12.066Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "department": [
+      {
+        "id": "71397f64-f694-4526-a0ba-03d50c0d2166",
+        "name": "Sales",
+        "budget": 30476,
+        "location": "Floor 10",
+        "created_at": "2023-10-04T21:59:30.424Z",
+        "updated_at": "2023-10-04T08:57:49.507Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "b01b788d-beb5-4491-99eb-6d6148e6407c"
+      },
+      {
+        "id": "dd96cb39-acdc-4598-93ce-ef45f5d8204b",
+        "name": "Marketing",
+        "budget": 23896,
+        "location": "Floor 15",
+        "created_at": "2023-10-04T16:52:35.991Z",
+        "updated_at": "2023-10-04T07:03:33.191Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "7f8c4bbb-145e-4dbd-8ade-4921c4ea5b3c"
+      },
+      {
+        "id": "28119acf-5b6c-4914-849e-7a6f5a4524d7",
+        "name": "Finance",
+        "budget": 43775,
+        "location": "Floor 20",
+        "created_at": "2023-10-05T00:45:50.727Z",
+        "updated_at": "2023-10-04T07:07:06.990Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      },
+      {
+        "id": "cbe751ab-6e17-4854-b346-21d9090dc2e4",
+        "name": "Human Resources",
+        "budget": 57788,
+        "location": "Floor 25",
+        "created_at": "2023-10-04T20:15:38.467Z",
+        "updated_at": "2023-10-04T07:43:18.288Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      },
+      {
+        "id": "f4f44754-cc58-4783-8204-80cf33516560",
+        "name": "Operations",
+        "budget": 31617,
+        "location": "Floor 30",
+        "created_at": "2023-10-04T14:52:51.665Z",
+        "updated_at": "2023-10-04T16:11:52.353Z",
+        "company_id": "main_entity_pk",
+        "manager_id": "b01b788d-beb5-4491-99eb-6d6148e6407c"
+      }
+    ],
+    "project": [
+      {
+        "id": "fbbb6413-f0e5-4ce2-9e59-61be2b88f068",
+        "name": "Project A",
+        "start_date": "2023-10-04T18:18:02.802Z",
+        "end_date": "2023-10-04T20:11:32.737Z",
+        "budget": 68944,
+        "created_at": "2023-10-05T01:15:07.425Z",
+        "updated_at": "2023-10-04T08:26:54.049Z",
+        "company_id": "main_entity_pk",
+        "department_id": "dd96cb39-acdc-4598-93ce-ef45f5d8204b",
+        "manager_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      },
+      {
+        "id": "4702781d-67ca-4aaa-9ead-fe12c343faf2",
+        "name": "Project B",
+        "start_date": "2023-10-04T05:55:23.949Z",
+        "end_date": "2023-10-04T16:16:25.736Z",
+        "budget": 95432,
+        "created_at": "2023-10-05T00:37:15.026Z",
+        "updated_at": "2023-10-05T02:57:46.797Z",
+        "company_id": "main_entity_pk",
+        "department_id": "cbe751ab-6e17-4854-b346-21d9090dc2e4",
+        "manager_id": "bb3a7d84-d5c0-494b-b4d7-60ff6695a6ba"
+      },
+      {
+        "id": "dd8cf979-2a7a-4cdc-b293-e52c25fc55ee",
+        "name": "Project C",
+        "start_date": "2023-10-04T12:02:48.063Z",
+        "end_date": "2023-10-04T07:36:58.191Z",
+        "budget": 87440,
+        "created_at": "2023-10-04T18:47:45.311Z",
+        "updated_at": "2023-10-04T05:26:06.654Z",
+        "company_id": "main_entity_pk",
+        "department_id": "f4f44754-cc58-4783-8204-80cf33516560",
+        "manager_id": "b01b788d-beb5-4491-99eb-6d6148e6407c"
+      },
+      {
+        "id": "af9a0cc7-92a4-4d71-9d41-bb21e0ed5b55",
+        "name": "Project D",
+        "start_date": "2023-10-05T04:12:10.534Z",
+        "end_date": "2023-10-04T23:53:36.422Z",
+        "budget": 70101,
+        "created_at": "2023-10-04T16:15:50.200Z",
+        "updated_at": "2023-10-05T04:02:00.142Z",
+        "company_id": "main_entity_pk",
+        "department_id": "dd96cb39-acdc-4598-93ce-ef45f5d8204b",
+        "manager_id": "7f8c4bbb-145e-4dbd-8ade-4921c4ea5b3c"
+      },
+      {
+        "id": "f66f7579-d29a-4b90-9493-da5da7a14325",
+        "name": "Project E",
+        "start_date": "2023-10-04T21:50:09.395Z",
+        "end_date": "2023-10-04T21:41:21.563Z",
+        "budget": 21478,
+        "created_at": "2023-10-04T23:32:25.267Z",
+        "updated_at": "2023-10-04T05:54:19.788Z",
+        "company_id": "main_entity_pk",
+        "department_id": "71397f64-f694-4526-a0ba-03d50c0d2166",
+        "manager_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      }
+    ],
+    "attendance": [
+      {
+        "id": "3b830d95-dee8-4b9f-98b8-a574c5f8be67",
+        "date": "2023-10-04T19:08:46.762Z",
+        "time_in": "2023-10-05T05:02:54.856Z",
+        "time_out": "2023-10-04T11:01:58.232Z",
+        "hours_worked": 97782,
+        "overtime": 88387,
+        "status": "Present",
+        "created_at": "2023-10-04T17:44:14.998Z",
+        "updated_at": "2023-10-05T00:13:07.378Z",
+        "employee_id": "ceaf2c99-ab44-4182-9a72-350685243c92"
+      },
+      {
+        "id": "1ae7ef46-b22e-4e48-b62b-6259c8238453",
+        "date": "2023-10-05T02:10:34.258Z",
+        "time_in": "2023-10-04T16:34:24.733Z",
+        "time_out": "2023-10-05T00:18:58.561Z",
+        "hours_worked": 28663,
+        "overtime": 73852,
+        "status": "Absent",
+        "created_at": "2023-10-04T21:14:46.703Z",
+        "updated_at": "2023-10-04T07:31:16.489Z",
+        "employee_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      },
+      {
+        "id": "6503198c-3cb1-482c-a351-1b1ba2784da3",
+        "date": "2023-10-05T04:46:25.194Z",
+        "time_in": "2023-10-04T08:05:59.057Z",
+        "time_out": "2023-10-04T12:36:37.267Z",
+        "hours_worked": 59964,
+        "overtime": 4842,
+        "status": "Late",
+        "created_at": "2023-10-04T12:48:32.171Z",
+        "updated_at": "2023-10-04T21:17:59.106Z",
+        "employee_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      },
+      {
+        "id": "080c1d19-d4cd-406b-b496-b4b2982d3d32",
+        "date": "2023-10-05T01:23:07.182Z",
+        "time_in": "2023-10-04T14:19:27.807Z",
+        "time_out": "2023-10-05T03:41:02.193Z",
+        "hours_worked": 83436,
+        "overtime": 24864,
+        "status": "On Leave",
+        "created_at": "2023-10-04T21:53:14.783Z",
+        "updated_at": "2023-10-04T20:19:16.976Z",
+        "employee_id": "ceaf2c99-ab44-4182-9a72-350685243c92"
+      },
+      {
+        "id": "8a12f0ba-ac06-4094-93b2-a75f611d5961",
+        "date": "2023-10-04T21:46:37.943Z",
+        "time_in": "2023-10-04T15:11:06.968Z",
+        "time_out": "2023-10-04T19:40:05.007Z",
+        "hours_worked": 996,
+        "overtime": 70970,
+        "status": "Working Remotely",
+        "created_at": "2023-10-04T23:03:09.059Z",
+        "updated_at": "2023-10-04T15:15:20.289Z",
+        "employee_id": "a85a3599-03bf-4c32-9a35-4cd574deb336"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1b37e511-27dd-476e-97cc-429e3f11b65d",
+        "email": "Enoch99@roq.tech",
+        "firstName": "Gunner",
+        "lastName": "Friesen",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/92799427",
+        "tenantId": null
+      },
+      {
+        "reference": "63581ff2-0855-499f-9cfe-8d4d9b2da6ab",
+        "email": "Ottilie31@roq.tech",
+        "firstName": "Erika",
+        "lastName": "Stehr",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/212.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "044d2f46-b405-4abc-8201-883f847770d8",
+        "email": "Sandra_Wilkinson@roq.tech",
+        "firstName": "Aleen",
+        "lastName": "Turner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/71418090",
+        "tenantId": null
+      },
+      {
+        "reference": "8f8db6da-4b3a-4e42-bfea-59ddb688433e",
+        "email": "Ibrahim.Feeney99@roq.tech",
+        "firstName": "Dayton",
+        "lastName": "Hickle",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/428.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9a561526-eb7f-4fbe-a3e4-7748b488dbfa",
+        "email": "Karianne50@roq.tech",
+        "firstName": "Michelle",
+        "lastName": "Dooley",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/498.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]
